@@ -1,0 +1,27 @@
+What works
+
+File I/O: Successfully reads "coins.txt" line-by-line and creates "records.csv" with accurate data on exit.
+
+Data aggregation: The updateRecord function correctly identifies duplicate entries and sums their cent amounts.
+
+Optimal change: The algorithm correctly calculates the optimal change of coins for US$, AU$, and EUR denominations.
+
+String extraction: The Extraction function handles spaces effectively to isolate name, amount, and currency.
+
+Search functionality: The console allows for real-time name lookups and displays the specific coin breakdown for that user.
+
+Version control: uploading the different versions of code to GitHub was successful
+
+What does not work
+
+Doxygen HTML integration: While Doxygen produces individual .png graphs in the folder, it does not automatically compile them into a single, comprehensive structure chart on the main HTML page.
+
+Decoupling: The program fails to separate the I/O from the model; they are "highly coupled," making the code harder to maintain.
+
+Virus and malware 
+
+I have checked each submitted file for viruses and malware. 
+No threats were detected.
+
+Scanning Tool Used: Malwarebytes
+Date of scan: March 8, 2026
