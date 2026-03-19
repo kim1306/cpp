@@ -16,19 +16,19 @@
 	<fstream>
 	<string>
 
-1773028549 source:c:\users\dylan\desktop\cpp\ex1-main\ex1.cpp
+1773924228 source:c:\users\dylan\desktop\cpp\ex1-main\ex1.cpp
 	"ex1.h"
 	<iostream>
 	<fstream>
-	<string>
-	"ex1.h"
+	<cstring>
+	<cstdlib>
 
-1773028586 c:\users\dylan\desktop\cpp\ex1-main\ex1.h
+1773923254 c:\users\dylan\desktop\cpp\ex1-main\ex1.h
 	<iostream>
 	<fstream>
-	<string>
+	<cstring>
 
-1773028549 source:c:\users\dylan\desktop\cpp\ex1-main\main.cpp
+1773028591 source:c:\users\dylan\desktop\cpp\ex1-main\main.cpp
 	<iostream>
 	<fstream>
 	<string>

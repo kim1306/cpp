@@ -1,0 +1,14 @@
+<map id="ex1.cpp" name="ex1.cpp">
+<area shape="rect" id="Node000001" title="implementation of coin change calculations and file operations." alt="" coords="102,5,169,32"/>
+<area shape="rect" id="Node000002" href="$ex1_8h.html" title="header file containing structures, global variables, and function prototypes." alt="" coords="77,80,130,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,30,118,67,113,65,129,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,77,181"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="114,34,91,55,67,81,54,111,47,141,42,139,49,109,63,79,87,51,117,30"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="100,155,166,181"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="139,30,144,66,145,107,140,141,136,138,140,107,139,66,137,35"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="190,155,244,181"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="144,30,205,141,200,141,141,35"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,106,64,145,60,141,90,108"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="110,105,125,141,120,140,107,109"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="124,105,187,145,182,147,123,110"/>
+</map>

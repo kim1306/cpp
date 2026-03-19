@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <string>
+#include <cstring> // for cstring functions
 using namespace std;
 
 /**
@@ -18,16 +18,16 @@ extern int EU[4];
 
 extern int globalCounts[4];
 
-struct account {
-    string name;
+struct account { // str -> char arrays to use cstring function
+    char name[100];
     int amount;
-    string currency;
+    char currency[10];
 };
 
 extern account records[100];
 extern int recordCount;
 
-void calculate(int amount, string currency);
+void calculate(int amount, char* currency);
 /**
  * @brief calculates the optimal coin change for a given amount for the selected currency type
  *
@@ -49,7 +49,7 @@ void searchname();
  * @brief searches for a customer record by name and displays their change.
  */
 
-void updateRecord(string name, int amount, string currency);
+void updateRecord(char* name, int amount, char* currency);
 /**
  * @brief updates or inserts a data set in the records list.
  *
@@ -60,7 +60,7 @@ void updateRecord(string name, int amount, string currency);
  * @param currency =currency type
  */
 
-void Extraction(string line);
+void Extraction(char* line);
 /**
  * @brief extracts only necessary data from a line in the input file.
  *

@@ -1,0 +1,7 @@
+<map id="ex1.h" name="ex1.h">
+<area shape="rect" id="Node000001" title="header file containing structures, global variables, and function prototypes." alt="" coords="59,5,112,32"/>
+<area shape="rect" id="Node000002" href="$ex1_8cpp.html" title="implementation of coin change calculations and file operations." alt="" coords="5,80,73,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,44,49,81,45,78,67,46"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="main program of the coin change management" alt="" coords="96,80,171,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,43,128,80,123,80,101,47"/>
+</map>
