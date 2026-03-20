@@ -7,6 +7,7 @@
  */
 #include "unit.h"
 #include "regi.h"
+#include "result.h"
 #include <iostream>
 #include <fstream>
 
@@ -27,7 +28,6 @@ int main()
     ofile << R     // calls operator<<(ostream&, const Registration&)
         << "Number of units  = " << R.GetCount()   << '\n'
         << "Total credits    = " << R.GetCredits() << '\n';
-
 
     return 0;
 }

@@ -1,21 +1,30 @@
 # depslib dependency file v1.0
-1773931068 source:c:\users\dylan\desktop\cpp\regi-code\main.cpp
+1773983698 source:c:\users\dylan\desktop\cpp\regi-code\main.cpp
 	"unit.h"
 	"regi.h"
+	"result.h"
 	<iostream>
 	<fstream>
 
-1773930894 c:\users\dylan\desktop\cpp\regi-code\unit.h
+1773979167 c:\users\dylan\desktop\cpp\regi-code\unit.h
 	<iostream>
 
-1773930982 c:\users\dylan\desktop\cpp\regi-code\regi.h
+1773983872 c:\users\dylan\desktop\cpp\regi-code\regi.h
 	"unit.h"
+	"result.h"
 	<iostream>
 
-1773931582 source:c:\users\dylan\desktop\cpp\regi-code\regi.cpp
+1773982510 source:c:\users\dylan\desktop\cpp\regi-code\regi.cpp
 	"regi.h"
 
-1773930913 source:c:\users\dylan\desktop\cpp\regi-code\unit.cpp
+1773978593 source:c:\users\dylan\desktop\cpp\regi-code\unit.cpp
 	"unit.h"
 	<cstring>
+
+1773983012 c:\users\dylan\desktop\cpp\regi-code\result.h
+	"unit.h"
+	<iostream>
+
+1773983040 source:c:\users\dylan\desktop\cpp\regi-code\result.cpp
+	"result.h"
 

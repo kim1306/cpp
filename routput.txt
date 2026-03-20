@@ -1,20 +1,24 @@
-Student ID: 102234
-Semester:   962
-  Unit:    CHM_1020
-  Section: C
-  Credits: 3
-
-  Unit:    MUS_1100
-  Section: H
-  Credits: 1
-
-  Unit:    BIO_1040
+Student ID: 35052544
+Semester:   2026
+  Unit:    ICT001
   Section: D
-  Credits: 4
+  Credits: 3
+  Mark:    72.5
 
-  Unit:    MTH_2400
+  Unit:    ICT003
+  Section: O
+  Credits: 1
+  Mark:    85
+
+  Unit:    ICT174
+  Section: D
+  Credits: 3
+  Mark:    61
+
+  Unit:    ICT019
   Section: A
   Credits: 3
+  Mark:    78.5
 
 Number of units  = 4
-Total credits    = 11
+Total credits    = 10

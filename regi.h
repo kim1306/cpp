@@ -7,6 +7,7 @@
 #ifndef REGI_H
 #define REGI_H
 #include "unit.h"
+#include "result.h"
 #include <iostream>
 using namespace std;
 
@@ -45,8 +46,7 @@ private:
     long     studentId;
     unsigned semester;
     unsigned count;
-    Unit     units[10]; //when you declare Unit units[10] as a class member like this,
-                        //the Unit objects are created automatically when a Registration object is created — no new or separate construction needed.
+    Result result[10];
 };
 
 inline unsigned Registration::GetCount() const
