@@ -26,6 +26,33 @@ public:
      */
     Registration();
 
+         /**
+     * @brief Gets the student id.
+     * @return const long pointer to the student ID.
+     */
+    long GetstudentId() const;
+
+    /**
+     * @brief Sets the student Id.
+     * @param id The new student id as id
+     */
+    void SetstudentId( long id );
+
+
+             /**
+     * @brief Gets the semester.
+     * @return const long pointer to the semester.
+     */
+    unsigned Getsemester() const;
+
+    /**
+     * @brief Sets the semester.
+     * @param The new semster as sem
+     */
+    void Setsemester( unsigned sem );
+
+
+
     /**
      * @brief Calculates total credits from all enrolled units.
      * @return unsigned total credits.
@@ -48,6 +75,27 @@ private:
     unsigned count;
     Result result[10];
 };
+
+inline Registration::Registration()
+    : studentId(0), semester(0), count(0){}
+
+inline long Registration::GetstudentId () const
+{
+    return studentId;
+}
+inline void Registration::SetstudentId( long id )
+{
+    studentId=id;
+}
+
+inline unsigned Registration::Getsemester () const
+{
+    return semester;
+}
+inline void Registration::Setsemester( unsigned sem )
+{
+    semester=sem;
+}
 
 inline unsigned Registration::GetCount() const
 {

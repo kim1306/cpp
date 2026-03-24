@@ -3,21 +3,25 @@ Semester:   2026
   Unit:    ICT001
   Section: D
   Credits: 3
+  Date:    13/06/2023
   Mark:    72.5
 
   Unit:    ICT003
   Section: O
   Credits: 1
+  Date:    24/03/2026
   Mark:    85
 
   Unit:    ICT174
   Section: D
   Credits: 3
+  Date:    22/10/2025
   Mark:    61
 
   Unit:    ICT019
   Section: A
   Credits: 3
+  Date:    28/07/2024
   Mark:    78.5
 
 Number of units  = 4

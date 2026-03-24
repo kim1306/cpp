@@ -1,0 +1,12 @@
+<map id="result.h" name="result.h">
+<area shape="rect" id="Node000001" title="Result class definition — pairs a Unit with a mark." alt="" coords="74,5,139,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Student Registration System &#45; Main Entry Point." alt="" coords="5,155,80,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,42,70,81,56,121,47,156,42,153,51,120,65,79,87,47"/>
+<area shape="rect" id="Node000003" href="$regi_8h.html" title="Registration class definition for Murdoch University Student Registration." alt="" coords="80,80,133,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="108,45,109,80,104,79,105,50"/>
+<area shape="rect" id="Node000005" href="$result_8cpp.html" title="Implementation of the Result class." alt="" coords="157,80,235,107"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="134,40,183,79,178,80,133,45"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="88,118,55,156,52,152,83,119"/>
+<area shape="rect" id="Node000004" href="$regi_8cpp.html" title="Implementation of the Registration class." alt="" coords="104,155,171,181"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="119,119,134,155,129,154,116,124"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="regi.cpp" name="regi.cpp">
+<area shape="rect" id="Node000001" title="Implementation of the Registration class." alt="" coords="45,5,112,32"/>
+<area shape="rect" id="Node000002" href="$regi_8h.html" title="Registration class definition for Murdoch University Student Registration." alt="" coords="52,80,105,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,30,81,65,76,64,78,35"/>
+<area shape="rect" id="Node000003" href="$unit_8h.html" title="Unit class definition for Murdoch University Student Registration." alt="" coords="132,229,185,256"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="89,104,125,153,152,215,147,215,120,156,88,110"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,304,77,331"/>
+<area shape="poly" id="edge11_Node000002_Node000004" title=" " alt="" coords="65,110,51,130,37,156,29,190,28,226,36,289,31,289,22,226,24,190,32,154,46,127,67,105"/>
+<area shape="rect" id="Node000006" href="$result_8h.html" title="Result class definition — pairs a Unit with a mark." alt="" coords="46,155,110,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="79,105,81,139,76,139,78,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="141,257,76,298,73,293,135,256"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="116,304,169,331"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="158,255,151,290,146,287,154,258"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="93,179,136,218,131,220,92,185"/>
+<area shape="poly" id="edge10_Node000006_Node000004" title=" " alt="" coords="65,184,53,204,41,230,37,260,38,289,33,289,31,260,36,229,49,202,68,180"/>
+<area shape="rect" id="Node000007" href="$_date_8h.html" title="Date class definition for Murdoch University Student Registration." alt="" coords="50,229,107,256"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="79,179,81,214,76,213,77,184"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="74,255,57,292,52,289,70,258"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="91,254,124,292,119,293,88,259"/>
+</map>

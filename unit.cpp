@@ -4,37 +4,26 @@
  * @author Doheon
  * @date 2026-03-19
  */
+/**
+ * KEY CHANGE from C-string version:
+ *   operator>> previously did:  input >> U.unitName  (char array — risk of overflow)
+ *   Now it does:                input >> U.unitName  (std::string — safe, any length)
+ *   The code looks identical but std::string's operator>> handles memory automatically.
+ */
 #include "unit.h"
-#include <cstring>
-
-Unit::Unit()
-{
-    unitName[0] = '\0';
-    section     = '\0';
-    credits     = 0;
-}
-
-Unit::Unit( const char* nam, char sect, unsigned cred )
-{
-    // strncpy copies at most UnitNameSize-1 characters, then force null'\0'
-    // so unitName is always a valid C-string regardless of input.
-    strncpy( unitName, nam, UnitNameSize - 1 );
-    unitName[UnitNameSize - 1] = '\0';
-
-    section = sect;
-    credits = cred;
-}
 
 istream & operator >>( istream & input, Unit & U )
 {
+    // std::string >> reads one whitespace-delimited token.
+    // No buffer size, no strncpy, no null terminator needed.
     input >> U.unitName >> U.section >> U.credits;
     return input;
 }
 
 ostream & operator <<( ostream & output, const Unit & U )
 {
-    output << "  Unit:    " << U.unitName  << '\n'
-       << "  Section: " << U.section  << '\n'
-       << "  Credits: " << U.credits  << '\n';
+    output << "  Unit:    " << U.unitName << '\n'
+           << "  Section: " << U.section  << '\n'
+           << "  Credits: " << U.credits  << '\n';
     return output;
 }

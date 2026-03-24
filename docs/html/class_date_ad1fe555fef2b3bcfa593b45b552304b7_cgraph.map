@@ -1,0 +1,5 @@
+<map id="Date::SetDay" name="Date::SetDay">
+<area shape="rect" id="Node000001" title="Sets the day of the month." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="Node000002" href="$class_date.html#a19b3104655bd400f00abf6fb816c68dc" title="Returns the number of days in a given month." alt="" coords="155,5,290,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,16,142,18,136,19,107,21"/>
+</map>

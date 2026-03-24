@@ -2,12 +2,13 @@
  * @file result.h
  * @brief Result class definition — pairs a Unit with a mark.
  * @author Doheon
- * @date 2026-03-19
+ * @date 2026-03-24
  */
 #ifndef RESULT_H
 #define RESULT_H
 
 #include "unit.h"
+#include "date.h"
 #include <iostream>
 using namespace std;
 
@@ -30,7 +31,7 @@ public:
      * @param u    The Unit associated with this result.
      * @param mark The mark achieved (0.0 – 100.0).
      */
-    Result( const Unit & u, float mark );
+    Result( const Unit & u, float mark, const Date & d );
 
     /**
      * @brief Returns a copy of the Unit stored in this result.
@@ -44,6 +45,12 @@ public:
      */
     float GetMark() const;
 
+    /**
+     * @brief Returns the date for this record.
+     * @return Date
+     */
+    Date GetDate() const;
+
 
     /**
      * @brief Replaces the stored Unit.
@@ -56,6 +63,11 @@ public:
      * @param mark New mark value.
      */
     void SetMark( float mark );
+    /**
+     * @brief Sets the date for this result.
+     * @param d New Date value.
+     */
+    void SetDate( const Date & d);
 
     friend ostream & operator <<( ostream & output,    const Result & res );
     friend istream & operator >>( istream & input,       Result & res );
@@ -63,7 +75,12 @@ public:
 private:
     Unit  unit;   // composition: Result owns one Unit
     float mark;
+    Date date;
 };
+
+inline Result::Result() : mark(0.0f){}
+
+inline Result::Result( const Unit & u, float m, const Date & d ) : unit(u), mark(m), date(d) {}
 
 inline Unit Result::GetUnit() const
 {
@@ -74,6 +91,10 @@ inline float Result::GetMark() const
 {
     return mark;
 }
+inline Date  Result::GetDate() const
+{
+    return date;
+}
 
 inline void Result::SetUnit( const Unit & u )
 {
@@ -83,6 +104,10 @@ inline void Result::SetUnit( const Unit & u )
 inline void Result::SetMark( float m )
 {
     mark = m;
+}
+inline void  Result::SetDate( const Date & d )
+{
+    date = d;
 }
 
 #endif // RESULT_H

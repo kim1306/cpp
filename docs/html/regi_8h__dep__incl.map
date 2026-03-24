@@ -1,0 +1,7 @@
+<map id="regi.h" name="regi.h">
+<area shape="rect" id="Node000001" title="Registration class definition for Murdoch University Student Registration." alt="" coords="62,5,116,32"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html" title="Student Registration System &#45; Main Entry Point." alt="" coords="5,80,80,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,44,53,81,48,78,70,46"/>
+<area shape="rect" id="Node000003" href="$regi_8cpp.html" title="Implementation of the Registration class." alt="" coords="104,80,171,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,43,132,80,126,79,105,47"/>
+</map>

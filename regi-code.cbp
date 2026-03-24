@@ -39,6 +39,12 @@
 		<Unit filename="regi.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="result.cpp">
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="result.h">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="unit.cpp">
 			<Option target="Debug" />
 		</Unit>

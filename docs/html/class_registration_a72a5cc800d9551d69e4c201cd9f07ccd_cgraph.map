@@ -1,0 +1,7 @@
+<map id="Registration::GetCredits" name="Registration::GetCredits">
+<area shape="rect" id="Node000001" title="Calculates total credits from all enrolled units." alt="" coords="5,31,168,57"/>
+<area shape="rect" id="Node000002" href="$class_unit.html#ab1f83a3955a721e46730773747e4e67e" title="Gets the number of credits for this unit." alt="" coords="216,5,332,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,30,203,28,198,29,169,36"/>
+<area shape="rect" id="Node000003" href="$class_result.html#a5bcb14520ba30b744cc524a90e951f74" title="Returns a copy of the Unit stored in this result." alt="" coords="218,56,330,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,52,205,60,200,60,168,58"/>
+</map>

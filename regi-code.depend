@@ -1,30 +1,39 @@
 # depslib dependency file v1.0
-1773983698 source:c:\users\dylan\desktop\cpp\regi-code\main.cpp
+1773984256 source:c:\users\dylan\desktop\cpp\regi-code\main.cpp
 	"unit.h"
 	"regi.h"
 	"result.h"
 	<iostream>
 	<fstream>
 
-1773979167 c:\users\dylan\desktop\cpp\regi-code\unit.h
+1774323641 c:\users\dylan\desktop\cpp\regi-code\unit.h
 	<iostream>
+	<string>
 
-1773983872 c:\users\dylan\desktop\cpp\regi-code\regi.h
+1774323383 c:\users\dylan\desktop\cpp\regi-code\regi.h
 	"unit.h"
 	"result.h"
 	<iostream>
 
-1773982510 source:c:\users\dylan\desktop\cpp\regi-code\regi.cpp
+1774323428 source:c:\users\dylan\desktop\cpp\regi-code\regi.cpp
 	"regi.h"
 
-1773978593 source:c:\users\dylan\desktop\cpp\regi-code\unit.cpp
+1774323079 source:c:\users\dylan\desktop\cpp\regi-code\unit.cpp
 	"unit.h"
-	<cstring>
 
-1773983012 c:\users\dylan\desktop\cpp\regi-code\result.h
+1774325674 c:\users\dylan\desktop\cpp\regi-code\result.h
 	"unit.h"
+	"date.h"
 	<iostream>
 
-1773983040 source:c:\users\dylan\desktop\cpp\regi-code\result.cpp
+1773985600 source:c:\users\dylan\desktop\cpp\regi-code\result.cpp
 	"result.h"
+
+1774325550 c:\users\dylan\desktop\cpp\regi-code\date.h
+	<iostream>
+	<string>
+
+1774325608 source:c:\users\dylan\desktop\cpp\regi-code\date.cpp
+	"date.h"
+	<iomanip>
 

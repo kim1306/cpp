@@ -1,0 +1,11 @@
+<map id="Date::DaysInMonth" name="Date::DaysInMonth">
+<area shape="rect" id="Node000001" title="Returns the number of days in a given month." alt="" coords="323,31,458,57"/>
+<area shape="rect" id="Node000002" href="$class_date.html#ab57b4421262b819b772d3859e0101fc5" title="Checks whether the current day/month/year combination is valid." alt="" coords="176,5,272,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,32,273,29,273,23,310,31"/>
+<area shape="rect" id="Node000003" href="$class_date.html#ad1fe555fef2b3bcfa593b45b552304b7" title="Sets the day of the month." alt="" coords="174,56,275,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="305,57,276,64,275,59,310,56"/>
+<area shape="rect" id="Node000004" href="$class_date.html#a2f7cd7ffab255fa1b427d176501a4176" title="Parameterized constructor." alt="" coords="23,31,108,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="156,60,108,53,108,48,161,58"/>
+<area shape="rect" id="Node000005" href="$class_date.html#aed02c94f9958f3365806989bbad2c727" title="Reads a date from a stream in DD MM YYYY format." alt="" coords="5,81,126,108"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="156,80,126,88,126,82,161,79"/>
+</map>
