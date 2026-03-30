@@ -34,7 +34,7 @@ int main() {
     for (int i = 0; i < N; ++i) {
         sumSqDiff += std::pow(dataArray[i] - mean, 2); //formula for getting sd.1
     }//(dataArray[i] - mean)**2
-
+//from 0to n
     float stdDev = std::sqrt(sumSqDiff / (N - 1)); //formula for getting sd.2
     //sqrt= square root
 
