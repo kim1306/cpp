@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1774332439 source:c:\users\dylan\desktop\cpp\dynamicarr\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<cmath>
+	<iomanip>
+
