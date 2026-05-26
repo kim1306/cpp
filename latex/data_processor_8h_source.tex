@@ -1,0 +1,39 @@
+\doxysection{data\+Processor.\+h}
+\hypertarget{data_processor_8h_source}{}\label{data_processor_8h_source}\doxymbox{\hyperlink{data_processor_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DATAPROCESSOR\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DATAPROCESSOR\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_vector_8h}{Vector.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{single_weather_stat_8h}{singleWeatherStat.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classdata_processor}{dataProcessor}}}
+\DoxyCodeLine{00018\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classdata_processor_ae0489edc8837cc869aaa6e180c5781d6}{openfile}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \&filename);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classdata_processor_ac1f4ec8c9095f7c834f7681bda91863f}{openCSV}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ csv);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classdata_processor_a00bca3383966ded0075891489c995c22}{parsing}}(ifstream\ \&infile);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ \doxymbox{\hyperlink{classdata_processor_a29e3cb287d5df7a056d09948dd37d0d0}{collectData}}(ifstream\ \&infile);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{string}\ \doxymbox{\hyperlink{classdata_processor_aacd6ab82b190a80b82b626424d454b7b}{cleanString}}(\textcolor{keywordtype}{string}\ s);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_vector}{Vector<singleWeatherStat>}}\&\ \doxymbox{\hyperlink{classdata_processor_a23e149abaf2f0c8120e0bfaaa1d7478e}{getAllRecords}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classdata_processor_ab1c1a12ea1962c6eac706e777c2c49a0}{WASTindex}};\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classdata_processor_af1dbd95bb161b4ac90c2091220df220b}{Sindex}};\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classdata_processor_aed5afae6cae33db81661dc4d055d4d2e}{Tindex}};\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{classdata_processor_a3c01bd61d479ff82aaa136fd376b0b36}{SRindex}};\ }
+\DoxyCodeLine{00063\ \ \ \ \ \doxymbox{\hyperlink{class_vector}{Vector<singleWeatherStat>}}\ \doxymbox{\hyperlink{classdata_processor_a478fbbaeb2f5cf561d800749c8458f89}{allRecords}};\ }
+\DoxyCodeLine{00064\ \};}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ DATAPROCESSOR\_H\_INCLUDED}}
+
+\end{DoxyCode}

@@ -1,0 +1,32 @@
+\doxysection{compute.\+h}
+\hypertarget{compute_8h_source}{}\label{compute_8h_source}\doxymbox{\hyperlink{compute_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COMPUTE\_H\_INCLUDED}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ COMPUTE\_H\_INCLUDED}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{_vector_8h}{Vector.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\doxymbox{\hyperlink{single_weather_stat_8h}{singleWeatherStat.h}}"{}}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\doxymbox{\hyperlink{classcompute_abd329d724a983dce1fc447212701a7e1}{compute}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \doxymbox{\hyperlink{classcompute_abd329d724a983dce1fc447212701a7e1}{compute}}(\textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_vector}{Vector<singleWeatherStat>}}\&\ weatherData):\doxymbox{\hyperlink{classcompute_ac45bdced11d7e7307803c405d0659c07}{data}}(weatherData)\{\};\textcolor{comment}{//enables\ assigning\ values\ to\ \&data}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{classcompute_a84f6a533aa50618aa4a6f59b58423cf5}{getAvgWind}}(\textcolor{keywordtype}{int}\ month,\ \textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{classcompute_ac846689d43b055e49f09c8933a6fead0}{getStdevWind}}(\textcolor{keywordtype}{int}\ month,\ \textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{classcompute_a41235721a1e61bd3adda6da33060bd56}{getAvgTemp}}(\textcolor{keywordtype}{int}\ month,\ \textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{classcompute_abe60ecfcf15ef1a68dc23077b941f8e5}{getStdevTemp}}(\textcolor{keywordtype}{int}\ month,\ \textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{float}\ \doxymbox{\hyperlink{classcompute_a548233aed6e033f8bd24e5ebc1546e90}{getTotalSolarRad}}(\textcolor{keywordtype}{int}\ month,\textcolor{keywordtype}{int}\ year);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keyword}{const}\ \doxymbox{\hyperlink{class_vector}{Vector<singleWeatherStat>}}\ \&\doxymbox{\hyperlink{classcompute_ac45bdced11d7e7307803c405d0659c07}{data}};\textcolor{comment}{//cannot\ exists\ without\ an\ object\ to\ refer\ to}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ COMPUTE\_H\_INCLUDED}}
+
+\end{DoxyCode}

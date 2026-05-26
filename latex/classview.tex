@@ -1,0 +1,275 @@
+\doxysection{view Class Reference}
+\hypertarget{classview}{}\label{classview}\index{view@{view}}
+
+
+it handles \textquotesingle{}VIEW\textquotesingle{} of MVC. input and output  
+
+
+
+
+{\ttfamily \+\#include $<$view.\+h$>$}
+
+
+
+Collaboration diagram for view:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{classview__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classview_a627c2a50f93236fe731e54c326c46c0e}{open\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em it prints menu options (1\texorpdfstring{$\sim$}{\string~}5) and take the user input \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_ad04c20112bcec34c2e66ed45660e0a6b}{display\+Windstats}} (float avg, float stdev)
+\begin{DoxyCompactList}\small\item\em it prints average wind speed and standard deviation \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_a31387667c257c9dcf13e9f4f0ce4860f}{display\+Temperature\+Stats}} (float avg, float stdev)
+\begin{DoxyCompactList}\small\item\em it prints average temperature and standard deviation \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_a52e8f871b7b9cc817a6a72cbefe5b041}{display\+Total\+SR}} (float sum)
+\begin{DoxyCompactList}\small\item\em it prints total of solar radiation \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_a173a2fde35624b29a75025d272bcac82}{terminate}} ()
+\begin{DoxyCompactList}\small\item\em it prints a termination message \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classview_acc6b4b4f3e286930a279883a4d97cc25}{Ask\+Month}} ()
+\begin{DoxyCompactList}\small\item\em it asks month \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classview_a3c1265a3abbb0217b89ffc405b248b18}{Ask\+Year}} ()
+\begin{DoxyCompactList}\small\item\em it asks year \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_a95d672bb222e382aded83c616efea063}{Choice\+Error}} ()
+\begin{DoxyCompactList}\small\item\em it prints error message when user input is outside of scope \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_a5f8306c7241a4fb2b058b787dbacd216}{Monthly\+Weather\+Stats\+Header}} (int year)
+\begin{DoxyCompactList}\small\item\em it prints year and formatted table headers (for option 4) \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classview_a4758232bbf9c450486801bcc15d880b9}{display\+Monthly\+Row}} (int month, float Wavg, float Wstd, float Tavg, float Tstd, float SR)
+\begin{DoxyCompactList}\small\item\em displays a month and a single row of weather data for that specific month \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+it handles \textquotesingle{}VIEW\textquotesingle{} of MVC. input and output 
+
+\label{doc-func-members}
+\Hypertarget{classview_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classview_acc6b4b4f3e286930a279883a4d97cc25}\index{view@{view}!AskMonth@{AskMonth}}
+\index{AskMonth@{AskMonth}!view@{view}}
+\doxysubsubsection{\texorpdfstring{AskMonth()}{AskMonth()}}
+{\footnotesize\ttfamily \label{classview_acc6b4b4f3e286930a279883a4d97cc25} 
+int view::\+\+Ask\+Month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+it asks month 
+
+\begin{DoxyReturn}{Returns}
+month as a integer 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classview_acc6b4b4f3e286930a279883a4d97cc25_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a3c1265a3abbb0217b89ffc405b248b18}\index{view@{view}!AskYear@{AskYear}}
+\index{AskYear@{AskYear}!view@{view}}
+\doxysubsubsection{\texorpdfstring{AskYear()}{AskYear()}}
+{\footnotesize\ttfamily \label{classview_a3c1265a3abbb0217b89ffc405b248b18} 
+int view::\+\+Ask\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+it asks year 
+
+\begin{DoxyReturn}{Returns}
+year as a integer 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classview_a3c1265a3abbb0217b89ffc405b248b18_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a95d672bb222e382aded83c616efea063}\index{view@{view}!ChoiceError@{ChoiceError}}
+\index{ChoiceError@{ChoiceError}!view@{view}}
+\doxysubsubsection{\texorpdfstring{ChoiceError()}{ChoiceError()}}
+{\footnotesize\ttfamily \label{classview_a95d672bb222e382aded83c616efea063} 
+void view::\+\+Choice\+Error (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+it prints error message when user input is outside of scope 
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{classview_a95d672bb222e382aded83c616efea063_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a4758232bbf9c450486801bcc15d880b9}\index{view@{view}!displayMonthlyRow@{displayMonthlyRow}}
+\index{displayMonthlyRow@{displayMonthlyRow}!view@{view}}
+\doxysubsubsection{\texorpdfstring{displayMonthlyRow()}{displayMonthlyRow()}}
+{\footnotesize\ttfamily \label{classview_a4758232bbf9c450486801bcc15d880b9} 
+void view::\+display\+Monthly\+Row (\begin{DoxyParamCaption}\item[{int}]{month}{, }\item[{float}]{Wavg}{, }\item[{float}]{Wstd}{, }\item[{float}]{Tavg}{, }\item[{float}]{Tstd}{, }\item[{float}]{SR}{}\end{DoxyParamCaption})}
+
+
+
+displays a month and a single row of weather data for that specific month 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & the month \\
+\hline
+{\em Wavg} & average wind speed of that month \\
+\hline
+{\em Wstd} & standard deviation of the wind speed of that month \\
+\hline
+{\em Tavg} & average temperature of that month \\
+\hline
+{\em Tstd} & standard deviation of the temperature of that month \\
+\hline
+{\em SR} & the total solar radiation of that month \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{classview_a4758232bbf9c450486801bcc15d880b9_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a31387667c257c9dcf13e9f4f0ce4860f}\index{view@{view}!displayTemperatureStats@{displayTemperatureStats}}
+\index{displayTemperatureStats@{displayTemperatureStats}!view@{view}}
+\doxysubsubsection{\texorpdfstring{displayTemperatureStats()}{displayTemperatureStats()}}
+{\footnotesize\ttfamily \label{classview_a31387667c257c9dcf13e9f4f0ce4860f} 
+void view::\+display\+Temperature\+Stats (\begin{DoxyParamCaption}\item[{float}]{avg}{, }\item[{float}]{stdev}{}\end{DoxyParamCaption})}
+
+
+
+it prints average temperature and standard deviation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avg} & average temperature \\
+\hline
+{\em stdev} & standard deviation of temperature \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{classview_a31387667c257c9dcf13e9f4f0ce4860f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a52e8f871b7b9cc817a6a72cbefe5b041}\index{view@{view}!displayTotalSR@{displayTotalSR}}
+\index{displayTotalSR@{displayTotalSR}!view@{view}}
+\doxysubsubsection{\texorpdfstring{displayTotalSR()}{displayTotalSR()}}
+{\footnotesize\ttfamily \label{classview_a52e8f871b7b9cc817a6a72cbefe5b041} 
+void view::\+display\+Total\+SR (\begin{DoxyParamCaption}\item[{float}]{sum}{}\end{DoxyParamCaption})}
+
+
+
+it prints total of solar radiation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sum} & sum of solar radiation \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{classview_a52e8f871b7b9cc817a6a72cbefe5b041_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_ad04c20112bcec34c2e66ed45660e0a6b}\index{view@{view}!displayWindstats@{displayWindstats}}
+\index{displayWindstats@{displayWindstats}!view@{view}}
+\doxysubsubsection{\texorpdfstring{displayWindstats()}{displayWindstats()}}
+{\footnotesize\ttfamily \label{classview_ad04c20112bcec34c2e66ed45660e0a6b} 
+void view::\+display\+Windstats (\begin{DoxyParamCaption}\item[{float}]{avg}{, }\item[{float}]{stdev}{}\end{DoxyParamCaption})}
+
+
+
+it prints average wind speed and standard deviation 
+
+
+\begin{DoxyParams}{Parameters}
+{\em avg} & average wind speed \\
+\hline
+{\em stdev} & standard deviation of wind speed \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classview_ad04c20112bcec34c2e66ed45660e0a6b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a5f8306c7241a4fb2b058b787dbacd216}\index{view@{view}!MonthlyWeatherStatsHeader@{MonthlyWeatherStatsHeader}}
+\index{MonthlyWeatherStatsHeader@{MonthlyWeatherStatsHeader}!view@{view}}
+\doxysubsubsection{\texorpdfstring{MonthlyWeatherStatsHeader()}{MonthlyWeatherStatsHeader()}}
+{\footnotesize\ttfamily \label{classview_a5f8306c7241a4fb2b058b787dbacd216} 
+void view::\+\+Monthly\+Weather\+Stats\+Header (\begin{DoxyParamCaption}\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+it prints year and formatted table headers (for option 4) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em year} & as a integer \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{classview_a5f8306c7241a4fb2b058b787dbacd216_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a627c2a50f93236fe731e54c326c46c0e}\index{view@{view}!openMenu@{openMenu}}
+\index{openMenu@{openMenu}!view@{view}}
+\doxysubsubsection{\texorpdfstring{openMenu()}{openMenu()}}
+{\footnotesize\ttfamily \label{classview_a627c2a50f93236fe731e54c326c46c0e} 
+int view::\+open\+Menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+it prints menu options (1\texorpdfstring{$\sim$}{\string~}5) and take the user input 
+
+\begin{DoxyReturn}{Returns}
+userinput as integer 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{classview_a627c2a50f93236fe731e54c326c46c0e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classview_a173a2fde35624b29a75025d272bcac82}\index{view@{view}!terminate@{terminate}}
+\index{terminate@{terminate}!view@{view}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \label{classview_a173a2fde35624b29a75025d272bcac82} 
+void view::\+terminate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+it prints a termination message 
+
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classview_a173a2fde35624b29a75025d272bcac82_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{view_8h}{view.\+h}}\item 
+\doxymbox{\hyperlink{view_8cpp}{view.\+cpp}}\end{DoxyCompactItemize}

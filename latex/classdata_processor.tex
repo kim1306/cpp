@@ -1,0 +1,279 @@
+\doxysection{data\+Processor Class Reference}
+\hypertarget{classdata_processor}{}\label{classdata_processor}\index{dataProcessor@{dataProcessor}}
+
+
+handles reading, parsing, and storing weather data from CSV files this class is responsible for extracting certain columns of data (WAST, etc) and adding a weather records into \doxylink{class_vector}{Vector}  
+
+
+
+
+{\ttfamily \+\#include $<$data\+Processor.\+h$>$}
+
+
+
+Collaboration diagram for data\+Processor:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classdata_processor__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{classdata_processor_ae0489edc8837cc869aaa6e180c5781d6}{openfile}} (const string \&filename)
+\begin{DoxyCompactList}\small\item\em it opens a text file that contins a list of Csv file names \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classdata_processor_ac1f4ec8c9095f7c834f7681bda91863f}{open\+CSV}} (const string \&csv)
+\begin{DoxyCompactList}\small\item\em it opens a individual Csv file and pass it to \doxylink{classdata_processor_a00bca3383966ded0075891489c995c22}{parsing()} \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classdata_processor_a00bca3383966ded0075891489c995c22}{parsing}} (ifstream \&infile)
+\begin{DoxyCompactList}\small\item\em it reads the first row of csv file, identifying WAST, S ,T and SR \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classdata_processor_a29e3cb287d5df7a056d09948dd37d0d0}{collect\+Data}} (ifstream \&infile)
+\begin{DoxyCompactList}\small\item\em it reads data from Csv file and stores it in all\+Records \end{DoxyCompactList}\item 
+string \doxymbox{\hyperlink{classdata_processor_aacd6ab82b190a80b82b626424d454b7b}{clean\+String}} (string s)
+\begin{DoxyCompactList}\small\item\em it cleans string by removing non-\/alphabetic characters (it sometimes reads some hidden spaces or characters) \end{DoxyCompactList}\item 
+const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ \doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}} $>$ \& \doxymbox{\hyperlink{classdata_processor_a23e149abaf2f0c8120e0bfaaa1d7478e}{get\+All\+Records}} () const
+\begin{DoxyCompactList}\small\item\em getter of all\+Records, it provides read-\/only access to the records \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classdata_processor_ab1c1a12ea1962c6eac706e777c2c49a0}{WASTindex}}
+\item 
+int \doxymbox{\hyperlink{classdata_processor_af1dbd95bb161b4ac90c2091220df220b}{Sindex}}
+\begin{DoxyCompactList}\small\item\em column index for data/\+time \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classdata_processor_aed5afae6cae33db81661dc4d055d4d2e}{Tindex}}
+\begin{DoxyCompactList}\small\item\em column index for wind speed \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classdata_processor_a3c01bd61d479ff82aaa136fd376b0b36}{SRindex}}
+\begin{DoxyCompactList}\small\item\em column index for temperature \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_vector}{Vector}}$<$ \doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}} $>$ \doxymbox{\hyperlink{classdata_processor_a478fbbaeb2f5cf561d800749c8458f89}{all\+Records}}
+\begin{DoxyCompactList}\small\item\em column index for solar radiation \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+handles reading, parsing, and storing weather data from CSV files this class is responsible for extracting certain columns of data (WAST, etc) and adding a weather records into \doxylink{class_vector}{Vector} 
+
+\label{doc-func-members}
+\Hypertarget{classdata_processor_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdata_processor_aacd6ab82b190a80b82b626424d454b7b}\index{dataProcessor@{dataProcessor}!cleanString@{cleanString}}
+\index{cleanString@{cleanString}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{cleanString()}{cleanString()}}
+{\footnotesize\ttfamily \label{classdata_processor_aacd6ab82b190a80b82b626424d454b7b} 
+string data\+Processor::\+clean\+String (\begin{DoxyParamCaption}\item[{string}]{s}{}\end{DoxyParamCaption})}
+
+
+
+it cleans string by removing non-\/alphabetic characters (it sometimes reads some hidden spaces or characters) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & the raw string to clean \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the strinng containing only letter (a to z and A to Z) 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_aacd6ab82b190a80b82b626424d454b7b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdata_processor_a29e3cb287d5df7a056d09948dd37d0d0}\index{dataProcessor@{dataProcessor}!collectData@{collectData}}
+\index{collectData@{collectData}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{collectData()}{collectData()}}
+{\footnotesize\ttfamily \label{classdata_processor_a29e3cb287d5df7a056d09948dd37d0d0} 
+void data\+Processor::\+collect\+Data (\begin{DoxyParamCaption}\item[{ifstream \&}]{infile}{}\end{DoxyParamCaption})}
+
+
+
+it reads data from Csv file and stores it in all\+Records 
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv} & path to the csv file(data/\+..) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classdata_processor_a29e3cb287d5df7a056d09948dd37d0d0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_a29e3cb287d5df7a056d09948dd37d0d0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdata_processor_a23e149abaf2f0c8120e0bfaaa1d7478e}\index{dataProcessor@{dataProcessor}!getAllRecords@{getAllRecords}}
+\index{getAllRecords@{getAllRecords}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{getAllRecords()}{getAllRecords()}}
+{\footnotesize\ttfamily \label{classdata_processor_a23e149abaf2f0c8120e0bfaaa1d7478e} 
+const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ \doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}} $>$ \& data\+Processor::\+get\+All\+Records (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+getter of all\+Records, it provides read-\/only access to the records 
+
+\begin{DoxyReturn}{Returns}
+a constant reference to the \doxylink{class_vector}{Vector} of \doxylink{structsingle_weather_stat}{single\+Weather\+Stat} 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{classdata_processor_a23e149abaf2f0c8120e0bfaaa1d7478e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdata_processor_ac1f4ec8c9095f7c834f7681bda91863f}\index{dataProcessor@{dataProcessor}!openCSV@{openCSV}}
+\index{openCSV@{openCSV}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{openCSV()}{openCSV()}}
+{\footnotesize\ttfamily \label{classdata_processor_ac1f4ec8c9095f7c834f7681bda91863f} 
+void data\+Processor::\+open\+CSV (\begin{DoxyParamCaption}\item[{const string \&}]{csv}{}\end{DoxyParamCaption})}
+
+
+
+it opens a individual Csv file and pass it to \doxylink{classdata_processor_a00bca3383966ded0075891489c995c22}{parsing()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em csv} & path to the csv file(data/\+..) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_ac1f4ec8c9095f7c834f7681bda91863f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_ac1f4ec8c9095f7c834f7681bda91863f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdata_processor_ae0489edc8837cc869aaa6e180c5781d6}\index{dataProcessor@{dataProcessor}!openfile@{openfile}}
+\index{openfile@{openfile}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{openfile()}{openfile()}}
+{\footnotesize\ttfamily \label{classdata_processor_ae0489edc8837cc869aaa6e180c5781d6} 
+void data\+Processor::\+openfile (\begin{DoxyParamCaption}\item[{const string \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+it opens a text file that contins a list of Csv file names 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & path to the text file(data/\+..) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_ae0489edc8837cc869aaa6e180c5781d6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classdata_processor_ae0489edc8837cc869aaa6e180c5781d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdata_processor_a00bca3383966ded0075891489c995c22}\index{dataProcessor@{dataProcessor}!parsing@{parsing}}
+\index{parsing@{parsing}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{parsing()}{parsing()}}
+{\footnotesize\ttfamily \label{classdata_processor_a00bca3383966ded0075891489c995c22} 
+void data\+Processor::\+parsing (\begin{DoxyParamCaption}\item[{ifstream \&}]{infile}{}\end{DoxyParamCaption})}
+
+
+
+it reads the first row of csv file, identifying WAST, S ,T and SR 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infile} & reference to the open file stream \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_a00bca3383966ded0075891489c995c22_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdata_processor_a00bca3383966ded0075891489c995c22_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classdata_processor_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdata_processor_a478fbbaeb2f5cf561d800749c8458f89}\index{dataProcessor@{dataProcessor}!allRecords@{allRecords}}
+\index{allRecords@{allRecords}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{allRecords}{allRecords}}
+{\footnotesize\ttfamily \label{classdata_processor_a478fbbaeb2f5cf561d800749c8458f89} 
+\doxymbox{\hyperlink{class_vector}{Vector}}$<$\doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}}$>$ data\+Processor::\+all\+Records\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+column index for solar radiation 
+
+\Hypertarget{classdata_processor_af1dbd95bb161b4ac90c2091220df220b}\index{dataProcessor@{dataProcessor}!Sindex@{Sindex}}
+\index{Sindex@{Sindex}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{Sindex}{Sindex}}
+{\footnotesize\ttfamily \label{classdata_processor_af1dbd95bb161b4ac90c2091220df220b} 
+int data\+Processor::\+\+Sindex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+column index for data/\+time 
+
+\Hypertarget{classdata_processor_a3c01bd61d479ff82aaa136fd376b0b36}\index{dataProcessor@{dataProcessor}!SRindex@{SRindex}}
+\index{SRindex@{SRindex}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{SRindex}{SRindex}}
+{\footnotesize\ttfamily \label{classdata_processor_a3c01bd61d479ff82aaa136fd376b0b36} 
+int data\+Processor::\+\+SRindex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+column index for temperature 
+
+\Hypertarget{classdata_processor_aed5afae6cae33db81661dc4d055d4d2e}\index{dataProcessor@{dataProcessor}!Tindex@{Tindex}}
+\index{Tindex@{Tindex}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{Tindex}{Tindex}}
+{\footnotesize\ttfamily \label{classdata_processor_aed5afae6cae33db81661dc4d055d4d2e} 
+int data\+Processor::\+\+Tindex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+column index for wind speed 
+
+\Hypertarget{classdata_processor_ab1c1a12ea1962c6eac706e777c2c49a0}\index{dataProcessor@{dataProcessor}!WASTindex@{WASTindex}}
+\index{WASTindex@{WASTindex}!dataProcessor@{dataProcessor}}
+\doxysubsubsection{\texorpdfstring{WASTindex}{WASTindex}}
+{\footnotesize\ttfamily \label{classdata_processor_ab1c1a12ea1962c6eac706e777c2c49a0} 
+int data\+Processor::\+\+WASTindex\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{data_processor_8h}{data\+Processor.\+h}}\item 
+\doxymbox{\hyperlink{data_processor_8cpp}{data\+Processor.\+cpp}}\end{DoxyCompactItemize}

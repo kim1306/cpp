@@ -1,0 +1,242 @@
+\doxysection{compute Class Reference}
+\hypertarget{classcompute}{}\label{classcompute}\index{compute@{compute}}
+
+
+it performs calculation on weather data (averages, standard deviation, and totals) this class has a constant reference to a \doxylink{class_vector}{Vector} of weather records that is from \doxylink{classdata_processor}{data\+Processor}  
+
+
+
+
+{\ttfamily \+\#include $<$compute.\+h$>$}
+
+
+
+Collaboration diagram for compute:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classcompute__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classcompute_abd329d724a983dce1fc447212701a7e1}{compute}} (const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ \doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}} $>$ \&weather\+Data)
+\begin{DoxyCompactList}\small\item\em constructor that initializes the compute object \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classcompute_a84f6a533aa50618aa4a6f59b58423cf5}{get\+Avg\+Wind}} (int month, int year)
+\begin{DoxyCompactList}\small\item\em calculates average wind speed for a specific month and year \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classcompute_ac846689d43b055e49f09c8933a6fead0}{get\+Stdev\+Wind}} (int month, int year)
+\begin{DoxyCompactList}\small\item\em calculates standard deviation of wind speed for a specific month and year \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classcompute_a41235721a1e61bd3adda6da33060bd56}{get\+Avg\+Temp}} (int month, int year)
+\begin{DoxyCompactList}\small\item\em calculates average temperature for a specific month and year \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classcompute_abe60ecfcf15ef1a68dc23077b941f8e5}{get\+Stdev\+Temp}} (int month, int year)
+\begin{DoxyCompactList}\small\item\em calculates standard deviation of temperature for a specific month and year \end{DoxyCompactList}\item 
+float \doxymbox{\hyperlink{classcompute_a548233aed6e033f8bd24e5ebc1546e90}{get\+Total\+Solar\+Rad}} (int month, int year)
+\begin{DoxyCompactList}\small\item\em calculates total of solar radiation for a specific month and year \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ \doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}} $>$ \& \doxymbox{\hyperlink{classcompute_ac45bdced11d7e7307803c405d0659c07}{data}}
+\begin{DoxyCompactList}\small\item\em this is an alias for the \doxylink{class_vector}{Vector} stored in the \doxylink{classdata_processor}{data\+Processor} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+it performs calculation on weather data (averages, standard deviation, and totals) this class has a constant reference to a \doxylink{class_vector}{Vector} of weather records that is from \doxylink{classdata_processor}{data\+Processor} 
+
+\label{doc-constructors}
+\Hypertarget{classcompute_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcompute_abd329d724a983dce1fc447212701a7e1}\index{compute@{compute}!compute@{compute}}
+\index{compute@{compute}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily \label{classcompute_abd329d724a983dce1fc447212701a7e1} 
+compute::\+compute (\begin{DoxyParamCaption}\item[{const \doxymbox{\hyperlink{class_vector}{Vector}}$<$ \doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}} $>$ \&}]{weather\+Data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor that initializes the compute object 
+
+\begin{DoxyNote}{Note}
+the reference \textquotesingle{}data\textquotesingle{} must be initialized at birth through the member initialization list, otherwise it will point to nothing for a slight moment and print error 
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em weather\+Data} & a constant reference to an existing \doxylink{class_vector}{Vector} of \doxylink{structsingle_weather_stat}{single\+Weather\+Stat}. \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classcompute_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcompute_a41235721a1e61bd3adda6da33060bd56}\index{compute@{compute}!getAvgTemp@{getAvgTemp}}
+\index{getAvgTemp@{getAvgTemp}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{getAvgTemp()}{getAvgTemp()}}
+{\footnotesize\ttfamily \label{classcompute_a41235721a1e61bd3adda6da33060bd56} 
+float compute::\+get\+Avg\+Temp (\begin{DoxyParamCaption}\item[{int}]{month}{, }\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+calculates average temperature for a specific month and year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & the month as an integer \\
+\hline
+{\em year} & the year as an integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average temperature as a float 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcompute_a41235721a1e61bd3adda6da33060bd56_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcompute_a84f6a533aa50618aa4a6f59b58423cf5}\index{compute@{compute}!getAvgWind@{getAvgWind}}
+\index{getAvgWind@{getAvgWind}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{getAvgWind()}{getAvgWind()}}
+{\footnotesize\ttfamily \label{classcompute_a84f6a533aa50618aa4a6f59b58423cf5} 
+float compute::\+get\+Avg\+Wind (\begin{DoxyParamCaption}\item[{int}]{month}{, }\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+calculates average wind speed for a specific month and year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & the month as an integer \\
+\hline
+{\em year} & the year as an integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The average wind speed as a float 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcompute_a84f6a533aa50618aa4a6f59b58423cf5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcompute_abe60ecfcf15ef1a68dc23077b941f8e5}\index{compute@{compute}!getStdevTemp@{getStdevTemp}}
+\index{getStdevTemp@{getStdevTemp}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{getStdevTemp()}{getStdevTemp()}}
+{\footnotesize\ttfamily \label{classcompute_abe60ecfcf15ef1a68dc23077b941f8e5} 
+float compute::\+get\+Stdev\+Temp (\begin{DoxyParamCaption}\item[{int}]{month}{, }\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+calculates standard deviation of temperature for a specific month and year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & the month as an integer \\
+\hline
+{\em year} & the year as an integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The standard deviation of temperature as a float 
+\end{DoxyReturn}
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcompute_abe60ecfcf15ef1a68dc23077b941f8e5_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classcompute_abe60ecfcf15ef1a68dc23077b941f8e5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcompute_ac846689d43b055e49f09c8933a6fead0}\index{compute@{compute}!getStdevWind@{getStdevWind}}
+\index{getStdevWind@{getStdevWind}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{getStdevWind()}{getStdevWind()}}
+{\footnotesize\ttfamily \label{classcompute_ac846689d43b055e49f09c8933a6fead0} 
+float compute::\+get\+Stdev\+Wind (\begin{DoxyParamCaption}\item[{int}]{month}{, }\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+calculates standard deviation of wind speed for a specific month and year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & the month as an integer \\
+\hline
+{\em year} & the year as an integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The standard deviation of wind as a float 
+\end{DoxyReturn}
+Here is the call graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcompute_ac846689d43b055e49f09c8933a6fead0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classcompute_ac846689d43b055e49f09c8933a6fead0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classcompute_a548233aed6e033f8bd24e5ebc1546e90}\index{compute@{compute}!getTotalSolarRad@{getTotalSolarRad}}
+\index{getTotalSolarRad@{getTotalSolarRad}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{getTotalSolarRad()}{getTotalSolarRad()}}
+{\footnotesize\ttfamily \label{classcompute_a548233aed6e033f8bd24e5ebc1546e90} 
+float compute::\+get\+Total\+Solar\+Rad (\begin{DoxyParamCaption}\item[{int}]{month}{, }\item[{int}]{year}{}\end{DoxyParamCaption})}
+
+
+
+calculates total of solar radiation for a specific month and year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em month} & the month as an integer \\
+\hline
+{\em year} & the year as an integer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total of solar radiation as a float 
+\end{DoxyReturn}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{classcompute_a548233aed6e033f8bd24e5ebc1546e90_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classcompute_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcompute_ac45bdced11d7e7307803c405d0659c07}\index{compute@{compute}!data@{data}}
+\index{data@{data}!compute@{compute}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classcompute_ac45bdced11d7e7307803c405d0659c07} 
+const \doxymbox{\hyperlink{class_vector}{Vector}}$<$\doxymbox{\hyperlink{structsingle_weather_stat}{single\+Weather\+Stat}}$>$\& compute::\+data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+this is an alias for the \doxylink{class_vector}{Vector} stored in the \doxylink{classdata_processor}{data\+Processor} 
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{compute_8h}{compute.\+h}}\item 
+\doxymbox{\hyperlink{compute_8cpp}{compute.\+cpp}}\end{DoxyCompactItemize}

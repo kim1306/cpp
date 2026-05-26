@@ -1,0 +1,21 @@
+<map id="dataProcessor::openfile" name="dataProcessor::openfile">
+<area shape="rect" id="Node000001" title="it opens a text file that contins a list of Csv file names" alt="" coords="5,81,164,108"/>
+<area shape="rect" id="Node000002" href="$classdata_processor.html#ac1f4ec8c9095f7c834f7681bda91863f" title="it opens a individual Csv file and pass it to parsing()" alt="" coords="212,81,381,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,92,199,94,194,96,165,97"/>
+<area shape="rect" id="Node000003" href="$classdata_processor.html#a00bca3383966ded0075891489c995c22" title="it reads the first row of csv file, identifying WAST, S ,T and SR" alt="" coords="429,81,584,108"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,92,416,94,411,95,382,97"/>
+<area shape="rect" id="Node000004" href="$classdata_processor.html#aacd6ab82b190a80b82b626424d454b7b" title="it cleans string by removing non&#45;alphabetic characters (it sometimes reads some hidden spaces or char..." alt="" coords="633,56,811,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="584,83,620,81,615,82,585,88"/>
+<area shape="rect" id="Node000005" href="$classdata_processor.html#a29e3cb287d5df7a056d09948dd37d0d0" title="it reads data from Csv file and stores it in allRecords" alt="" coords="632,107,812,133"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="585,101,619,107,614,108,585,106"/>
+<area shape="rect" id="Node000006" href="$classdate.html#a9806f5cb8229eed570f31043d3cc73f8" title="sets the day" alt="" coords="869,5,966,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="787,104,810,92,825,81,834,68,843,55,858,42,864,41,869,39,861,46,847,59,838,72,829,84,813,97,788,109"/>
+<area shape="rect" id="Node000007" href="$class_time.html#a79e74e17893cf244e1318ceb9b1c7f32" title="sets the hour" alt="" coords="865,56,970,83"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="776,103,848,87,853,86,777,109"/>
+<area shape="rect" id="Node000008" href="$class_time.html#a35779c16a9db3499a27eccd58793f3b5" title="sets the minute" alt="" coords="860,107,975,133"/>
+<area shape="poly" id="edge7_Node000005_Node000008" title=" " alt="" coords="812,117,847,120,842,120,812,123"/>
+<area shape="rect" id="Node000009" href="$classdate.html#a6e73b5dd43d866eeb88a3de29561679c" title="sets the month" alt="" coords="863,157,972,184"/>
+<area shape="poly" id="edge8_Node000005_Node000009" title=" " alt="" coords="777,131,851,153,846,153,776,137"/>
+<area shape="rect" id="Node000010" href="$classdate.html#a390791a3b9cc0c194c6c1111c76fe0cf" title="sets the year" alt="" coords="868,208,966,235"/>
+<area shape="poly" id="edge9_Node000005_Node000010" title=" " alt="" coords="747,131,861,194,873,202,867,201,858,198,746,136"/>
+</map>

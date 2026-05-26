@@ -1,0 +1,7 @@
+<map id="Vector::Vector" name="Vector::Vector">
+<area shape="rect" id="Node000001" title="default constructor initializes the vector with a default capacity of 20 and size of 0" alt="" coords="175,31,278,57"/>
+<area shape="rect" id="Node000002" href="$class_vector.html#ab592a44e241c3641bbdb0e19b450d73c" title="assignment operator handles deep copying and prevents memory leaks during assignment" alt="" coords="5,5,127,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="157,34,127,31,127,26,162,33"/>
+<area shape="rect" id="Node000003" href="$class_vector.html#ad0ed347210040680329535d7e4d16ae1" title="copy constructor creates a deep copy of another Vector object" alt="" coords="14,56,118,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="157,55,118,64,118,59,162,54"/>
+</map>

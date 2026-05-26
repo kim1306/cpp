@@ -1,0 +1,73 @@
+# depslib dependency file v1.0
+1776401202 source:c:\users\dylan\desktop\cpp\weathercsvreader\testfile\testcsvreader\main.cpp
+	<iostream>
+
+1776355830 c:\users\dylan\desktop\cpp\weathercsvreader\date.h
+
+1776360416 source:c:\users\dylan\desktop\cpp\weathercsvreader\compute.cpp
+	<iostream>
+	<cmath>
+	"compute.h"
+	"Vector.h"
+
+1776352504 c:\users\dylan\desktop\cpp\weathercsvreader\compute.h
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776351322 c:\users\dylan\desktop\cpp\weathercsvreader\vector.h
+
+1776345619 c:\users\dylan\desktop\cpp\weathercsvreader\singleweatherstat.h
+	"date.h"
+	"time.h"
+
+1776356199 c:\users\dylan\desktop\cpp\weathercsvreader\time.h
+
+1776387829 source:c:\users\dylan\desktop\cpp\weathercsvreader\dataprocessor.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"dataProcessor.h"
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776360237 c:\users\dylan\desktop\cpp\weathercsvreader\dataprocessor.h
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776348388 source:c:\users\dylan\desktop\cpp\weathercsvreader\date.cpp
+	<iostream>
+	"date.h"
+
+1776345619 source:c:\users\dylan\desktop\cpp\weathercsvreader\time.cpp
+	<iostream>
+	"time.h"
+
+1776401440 source:c:\users\dylan\desktop\cpp\weathercsvreader\testfile\testcsvreader\testtime.cpp
+	"../../Time.h"
+	<iostream>
+
+1776401315 source:c:\users\dylan\desktop\cpp\weathercsvreader\testfile\testcsvreader\testdate.cpp
+	"../../date.h"
+	<iostream>
+
+1776402490 source:c:\users\dylan\desktop\cpp\weathercsvreader\testfile\testcsvreader\testcompute.cpp
+	"../../compute.h"
+	"../../Vector.h"
+	"../../singleWeatherStat.h"
+	<iostream>
+	<cmath>
+
+1776405471 source:c:\users\dylan\desktop\cpp\weathercsvreader\testfile\testcsvreader\testvector.cpp
+	"../../Vector.h"
+	<iostream>
+	<string>
+
+1776404582 source:c:\users\dylan\desktop\cpp\weathercsvreader\testfile\testcsvreader\testdataprocessor.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<string>
+	"../../dataProcessor.h"
+	"../../Vector.h"
+	"../../singleWeatherStat.h"
+

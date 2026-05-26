@@ -1,0 +1,182 @@
+\doxysection{Time Class Reference}
+\hypertarget{class_time}{}\label{class_time}\index{Time@{Time}}
+
+
+stores hour and minute as integers  
+
+
+
+
+{\ttfamily \+\#include $<$time.\+h$>$}
+
+
+
+Collaboration diagram for Time:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{class_time__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_time_a4245e409c7347d1d671858962c2ca3b5}{Time}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_time_a7fed6fcd1c50536bffd6b87b821f8035}{Time}} (int m, int h)
+\begin{DoxyCompactList}\small\item\em constructor with parameters \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_time_a35779c16a9db3499a27eccd58793f3b5}{set\+Minute}} (int m)
+\begin{DoxyCompactList}\small\item\em sets the minute \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_time_a79e74e17893cf244e1318ceb9b1c7f32}{set\+Hour}} (int h)
+\begin{DoxyCompactList}\small\item\em sets the hour \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_time_a809250b6139afebe7c41a1fe6c857172}{get\+Minute}} () const
+\begin{DoxyCompactList}\small\item\em gets the minute \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_time_aacb846812dccbf244d52e0f237ad0026}{get\+Hour}} () const
+\begin{DoxyCompactList}\small\item\em gets the hour \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_time_a6c2e13147da34803a9784aa2b8bf8da8}{minute}}
+\item 
+int \doxymbox{\hyperlink{class_time_a497d35aa44ea40706dbab08f7a31d069}{hour}}
+\begin{DoxyCompactList}\small\item\em minute \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+stores hour and minute as integers 
+
+\label{doc-constructors}
+\Hypertarget{class_time_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_time_a4245e409c7347d1d671858962c2ca3b5}\index{Time@{Time}!Time@{Time}}
+\index{Time@{Time}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_time_a4245e409c7347d1d671858962c2ca3b5} 
+Time::\+\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\Hypertarget{class_time_a7fed6fcd1c50536bffd6b87b821f8035}\index{Time@{Time}!Time@{Time}}
+\index{Time@{Time}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{Time()}{Time()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_time_a7fed6fcd1c50536bffd6b87b821f8035} 
+Time::\+\+Time (\begin{DoxyParamCaption}\item[{int}]{m}{, }\item[{int}]{h}{}\end{DoxyParamCaption})}
+
+
+
+constructor with parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & minute \\
+\hline
+{\em h} & hour \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_time_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_time_aacb846812dccbf244d52e0f237ad0026}\index{Time@{Time}!getHour@{getHour}}
+\index{getHour@{getHour}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{getHour()}{getHour()}}
+{\footnotesize\ttfamily \label{class_time_aacb846812dccbf244d52e0f237ad0026} 
+int Time::\+get\+Hour (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+gets the hour 
+
+\begin{DoxyReturn}{Returns}
+hour as integer 
+\end{DoxyReturn}
+\Hypertarget{class_time_a809250b6139afebe7c41a1fe6c857172}\index{Time@{Time}!getMinute@{getMinute}}
+\index{getMinute@{getMinute}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{getMinute()}{getMinute()}}
+{\footnotesize\ttfamily \label{class_time_a809250b6139afebe7c41a1fe6c857172} 
+int Time::\+get\+Minute (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+gets the minute 
+
+\begin{DoxyReturn}{Returns}
+minute as integer 
+\end{DoxyReturn}
+\Hypertarget{class_time_a79e74e17893cf244e1318ceb9b1c7f32}\index{Time@{Time}!setHour@{setHour}}
+\index{setHour@{setHour}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{setHour()}{setHour()}}
+{\footnotesize\ttfamily \label{class_time_a79e74e17893cf244e1318ceb9b1c7f32} 
+void Time::\+set\+Hour (\begin{DoxyParamCaption}\item[{int}]{h}{}\end{DoxyParamCaption})}
+
+
+
+sets the hour 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & hour \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_a79e74e17893cf244e1318ceb9b1c7f32_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_time_a35779c16a9db3499a27eccd58793f3b5}\index{Time@{Time}!setMinute@{setMinute}}
+\index{setMinute@{setMinute}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{setMinute()}{setMinute()}}
+{\footnotesize\ttfamily \label{class_time_a35779c16a9db3499a27eccd58793f3b5} 
+void Time::\+set\+Minute (\begin{DoxyParamCaption}\item[{int}]{m}{}\end{DoxyParamCaption})}
+
+
+
+sets the minute 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & minute \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_time_a35779c16a9db3499a27eccd58793f3b5_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{class_time_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_time_a497d35aa44ea40706dbab08f7a31d069}\index{Time@{Time}!hour@{hour}}
+\index{hour@{hour}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily \label{class_time_a497d35aa44ea40706dbab08f7a31d069} 
+int Time::\+hour\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+minute 
+
+\Hypertarget{class_time_a6c2e13147da34803a9784aa2b8bf8da8}\index{Time@{Time}!minute@{minute}}
+\index{minute@{minute}!Time@{Time}}
+\doxysubsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily \label{class_time_a6c2e13147da34803a9784aa2b8bf8da8} 
+int Time::\+minute\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{time_8h}{time.\+h}}\item 
+\doxymbox{\hyperlink{time_8cpp}{time.\+cpp}}\end{DoxyCompactItemize}

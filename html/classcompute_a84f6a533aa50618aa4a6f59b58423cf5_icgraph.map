@@ -1,0 +1,8 @@
+<map id="compute::getAvgWind" name="compute::getAvgWind">
+<area shape="rect" id="Node000001" title="calculates average wind speed for a specific month and year" alt="" coords="312,31,462,57"/>
+<area shape="rect" id="Node000002" href="$classcompute.html#ac846689d43b055e49f09c8933a6fead0" title="calculates standard deviation of wind speed for a specific month and year" alt="" coords="103,5,264,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="294,33,264,31,265,26,299,33"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="296,47,55,47,55,41,297,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,36,56,43,55,37,90,34"/>
+</map>

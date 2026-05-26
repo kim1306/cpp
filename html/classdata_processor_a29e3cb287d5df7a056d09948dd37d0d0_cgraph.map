@@ -1,0 +1,13 @@
+<map id="dataProcessor::collectData" name="dataProcessor::collectData">
+<area shape="rect" id="Node000001" title="it reads data from Csv file and stores it in allRecords" alt="" coords="5,107,185,133"/>
+<area shape="rect" id="Node000002" href="$classdate.html#a9806f5cb8229eed570f31043d3cc73f8" title="sets the day" alt="" coords="242,5,338,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="118,104,231,42,245,37,241,40,234,46,121,108"/>
+<area shape="rect" id="Node000003" href="$class_time.html#a79e74e17893cf244e1318ceb9b1c7f32" title="sets the hour" alt="" coords="238,56,342,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,104,226,85,221,88,151,108"/>
+<area shape="rect" id="Node000004" href="$class_time.html#a35779c16a9db3499a27eccd58793f3b5" title="sets the minute" alt="" coords="233,107,348,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="184,117,220,119,215,121,185,123"/>
+<area shape="rect" id="Node000005" href="$classdate.html#a6e73b5dd43d866eeb88a3de29561679c" title="sets the month" alt="" coords="236,157,344,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="150,131,224,152,219,154,149,137"/>
+<area shape="rect" id="Node000006" href="$classdate.html#a390791a3b9cc0c194c6c1111c76fe0cf" title="sets the year" alt="" coords="241,208,340,235"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="120,131,234,194,246,201,240,201,231,198,119,136"/>
+</map>

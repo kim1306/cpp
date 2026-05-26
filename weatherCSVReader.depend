@@ -1,0 +1,190 @@
+# depslib dependency file v1.0
+1776310296 source:c:\users\dylan\desktop\cpp\weathercsvreader\consolecontrol.cpp
+	<iostream>
+	"consoleControl.h"
+	"compute.h"
+
+1776157428 c:\users\dylan\desktop\cpp\weathercsvreader\consolecontrol.h
+	"Vector.h"
+	"singleWeatherStat.h"
+	"compute.h"
+
+1776348371 source:c:\users\dylan\desktop\cpp\weathercsvreader\main.cpp
+	<iostream>
+	"compute.h"
+	"view.h"
+	"dataProcessor.h"
+
+1776360237 c:\users\dylan\desktop\cpp\weathercsvreader\dataprocessor.h
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776360223 source:c:\users\dylan\desktop\cpp\weathercsvreader\dataprocessor.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"dataProcessor.h"
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776351322 c:\users\dylan\desktop\cpp\weathercsvreader\vector.h
+
+1776345619 c:\users\dylan\desktop\cpp\weathercsvreader\singleweatherstat.h
+	"date.h"
+	"time.h"
+
+1776348388 source:c:\users\dylan\desktop\cpp\weathercsvreader\date.cpp
+	<iostream>
+	"date.h"
+
+1776355830 c:\users\dylan\desktop\cpp\weathercsvreader\date.h
+
+1776345619 source:c:\users\dylan\desktop\cpp\weathercsvreader\time.cpp
+	<iostream>
+	"time.h"
+
+1776356199 c:\users\dylan\desktop\cpp\weathercsvreader\time.h
+
+1776352504 c:\users\dylan\desktop\cpp\weathercsvreader\compute.h
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776360416 source:c:\users\dylan\desktop\cpp\weathercsvreader\compute.cpp
+	<iostream>
+	<cmath>
+	"compute.h"
+	"Vector.h"
+
+1776345619 source:c:\users\dylan\desktop\cpp\weathercsvreader\view.cpp
+	<iostream>
+	"view.h"
+
+1776357527 c:\users\dylan\desktop\cpp\weathercsvreader\view.h
+
+1776360416 source:c:\users\dylan\desktop\cpp\weathercsvreader - copy\compute.cpp
+	<iostream>
+	<cmath>
+	"compute.h"
+	"Vector.h"
+
+1776352504 c:\users\dylan\desktop\cpp\weathercsvreader - copy\compute.h
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1778207154 c:\users\dylan\desktop\cpp\weathercsvreader - copy\vector.h
+	<vector>
+
+1776345619 c:\users\dylan\desktop\cpp\weathercsvreader - copy\singleweatherstat.h
+	"date.h"
+	"time.h"
+
+1776355830 c:\users\dylan\desktop\cpp\weathercsvreader - copy\date.h
+
+1776356199 c:\users\dylan\desktop\cpp\weathercsvreader - copy\time.h
+
+1776387829 source:c:\users\dylan\desktop\cpp\weathercsvreader - copy\dataprocessor.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"dataProcessor.h"
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776683197 c:\users\dylan\desktop\cpp\weathercsvreader - copy\dataprocessor.h
+	"Vector.h"
+	"singleWeatherStat.h"
+
+1776348388 source:c:\users\dylan\desktop\cpp\weathercsvreader - copy\date.cpp
+	<iostream>
+	"date.h"
+
+1776348371 source:c:\users\dylan\desktop\cpp\weathercsvreader - copy\main.cpp
+	<iostream>
+	"compute.h"
+	"view.h"
+	"dataProcessor.h"
+
+1776357527 c:\users\dylan\desktop\cpp\weathercsvreader - copy\view.h
+
+1776345619 source:c:\users\dylan\desktop\cpp\weathercsvreader - copy\time.cpp
+	<iostream>
+	"time.h"
+
+1776345619 source:c:\users\dylan\desktop\cpp\weathercsvreader - copy\view.cpp
+	<iostream>
+	"view.h"
+
+1779761427 source:c:\users\dylan\desktop\cpp\spcc\dataprocessor.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	"dataProcessor.h"
+	"singleWeatherStat.h"
+	"BST.h"
+	"date.h"
+	<string>
+
+1779760000 c:\users\dylan\desktop\cpp\spcc\dataprocessor.h
+	"Vector.h"
+	<map>
+	"BST.h"
+	"singleWeatherStat.h"
+	<string>
+	<fstream>
+
+1779757503 c:\users\dylan\desktop\cpp\spcc\vector.h
+	<iostream>
+
+1779764839 c:\users\dylan\desktop\cpp\spcc\singleweatherstat.h
+	"date.h"
+	"Time.h"
+
+1779765021 c:\users\dylan\desktop\cpp\spcc\date.h
+	<iostream>
+
+1779765143 c:\users\dylan\desktop\cpp\spcc\time.h
+	<iostream>
+
+1779761943 source:c:\users\dylan\desktop\cpp\spcc\main.cpp
+	<iostream>
+	<iomanip>
+	<map>
+	"BST.h"
+	"date.h"
+	"Time.h"
+	"singleWeatherStat.h"
+	"dataProcessor.h"
+	"compute.h"
+
+1779760931 c:\users\dylan\desktop\cpp\spcc\compute.h
+	<map>
+	"BST.h"
+	"singleWeatherStat.h"
+	<string>
+
+1779736153 c:\users\dylan\desktop\cpp\spcc\view.h
+	"date.h"
+
+1779765114 source:c:\users\dylan\desktop\cpp\spcc\time.cpp
+	"time.h"
+
+1779765019 source:c:\users\dylan\desktop\cpp\spcc\date.cpp
+	"date.h"
+
+1779736093 source:c:\users\dylan\desktop\cpp\spcc\view.cpp
+	"view.h"
+
+1779767173 source:c:\users\dylan\desktop\cpp\spcc\compute.cpp
+	<iostream>
+	<cmath>
+	<map>
+	"compute.h"
+	"Vector.h"
+
+1779758893 c:\users\dylan\desktop\cpp\spcc\map.h
+	"Vector.h"
+
+1779764016 c:\users\dylan\desktop\cpp\spcc\bst.h
+	<iostream>
+	"Vector.h"
+

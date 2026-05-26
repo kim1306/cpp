@@ -1,0 +1,233 @@
+\doxysection{date Class Reference}
+\hypertarget{classdate}{}\label{classdate}\index{date@{date}}
+
+
+stores year, month and day as integers  
+
+
+
+
+{\ttfamily \+\#include $<$date.\+h$>$}
+
+
+
+Collaboration diagram for date:\+
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{classdate__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classdate_ace1e9bd1562330f4d03a385ee0cc2eba}{date}} ()
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classdate_adff8db9099be8ed64cbd0f2e3155109e}{date}} (int d, int m, int y)
+\begin{DoxyCompactList}\small\item\em constructor with 3 pararmeters \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classdate_a9806f5cb8229eed570f31043d3cc73f8}{set\+Day}} (int d)
+\begin{DoxyCompactList}\small\item\em sets the day \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classdate_a6e73b5dd43d866eeb88a3de29561679c}{set\+Month}} (int m)
+\begin{DoxyCompactList}\small\item\em sets the month \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{classdate_a390791a3b9cc0c194c6c1111c76fe0cf}{set\+Year}} (int y)
+\begin{DoxyCompactList}\small\item\em sets the year \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classdate_af62c3074cedbe16fdc5a726ec47c11c5}{get\+Day}} () const
+\begin{DoxyCompactList}\small\item\em gets the day \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classdate_a2ffbef31612dc26cadd7a9e714cb11c0}{get\+Month}} () const
+\begin{DoxyCompactList}\small\item\em gets the month \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classdate_ad55cceb4b604fe977243fc9f9799a33c}{get\+Year}} () const
+\begin{DoxyCompactList}\small\item\em gets the year \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classdate_a2649784269c2be62800d1e4509ed2b56}{day}}
+\item 
+int \doxymbox{\hyperlink{classdate_a4007efea3f7afe04e9a195dc13f71f38}{month}}
+\begin{DoxyCompactList}\small\item\em day of the month \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{classdate_a12304556327d9ea913a0534a8554107a}{year}}
+\begin{DoxyCompactList}\small\item\em month of the year \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+stores year, month and day as integers 
+
+\label{doc-constructors}
+\Hypertarget{classdate_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdate_ace1e9bd1562330f4d03a385ee0cc2eba}\index{date@{date}!date@{date}}
+\index{date@{date}!date@{date}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classdate_ace1e9bd1562330f4d03a385ee0cc2eba} 
+date::\+date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+default constructor 
+
+\Hypertarget{classdate_adff8db9099be8ed64cbd0f2e3155109e}\index{date@{date}!date@{date}}
+\index{date@{date}!date@{date}}
+\doxysubsubsection{\texorpdfstring{date()}{date()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classdate_adff8db9099be8ed64cbd0f2e3155109e} 
+date::\+date (\begin{DoxyParamCaption}\item[{int}]{d}{, }\item[{int}]{m}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+constructor with 3 pararmeters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & an integer that will sets the day\textquotesingle{}s value \\
+\hline
+{\em m} & an integer that will sets the month\textquotesingle{}s value \\
+\hline
+{\em y} & an integer that will sets the year\textquotesingle{}s value \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{classdate_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdate_af62c3074cedbe16fdc5a726ec47c11c5}\index{date@{date}!getDay@{getDay}}
+\index{getDay@{getDay}!date@{date}}
+\doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
+{\footnotesize\ttfamily \label{classdate_af62c3074cedbe16fdc5a726ec47c11c5} 
+int date::\+get\+Day (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+gets the day 
+
+\begin{DoxyReturn}{Returns}
+day as integer 
+\end{DoxyReturn}
+\Hypertarget{classdate_a2ffbef31612dc26cadd7a9e714cb11c0}\index{date@{date}!getMonth@{getMonth}}
+\index{getMonth@{getMonth}!date@{date}}
+\doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
+{\footnotesize\ttfamily \label{classdate_a2ffbef31612dc26cadd7a9e714cb11c0} 
+int date::\+get\+Month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+gets the month 
+
+\begin{DoxyReturn}{Returns}
+month as integer 
+\end{DoxyReturn}
+\Hypertarget{classdate_ad55cceb4b604fe977243fc9f9799a33c}\index{date@{date}!getYear@{getYear}}
+\index{getYear@{getYear}!date@{date}}
+\doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
+{\footnotesize\ttfamily \label{classdate_ad55cceb4b604fe977243fc9f9799a33c} 
+int date::\+get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+gets the year 
+
+\begin{DoxyReturn}{Returns}
+year as integer 
+\end{DoxyReturn}
+\Hypertarget{classdate_a9806f5cb8229eed570f31043d3cc73f8}\index{date@{date}!setDay@{setDay}}
+\index{setDay@{setDay}!date@{date}}
+\doxysubsubsection{\texorpdfstring{setDay()}{setDay()}}
+{\footnotesize\ttfamily \label{classdate_a9806f5cb8229eed570f31043d3cc73f8} 
+void date::\+set\+Day (\begin{DoxyParamCaption}\item[{int}]{d}{}\end{DoxyParamCaption})}
+
+
+
+sets the day 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & day \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdate_a9806f5cb8229eed570f31043d3cc73f8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdate_a6e73b5dd43d866eeb88a3de29561679c}\index{date@{date}!setMonth@{setMonth}}
+\index{setMonth@{setMonth}!date@{date}}
+\doxysubsubsection{\texorpdfstring{setMonth()}{setMonth()}}
+{\footnotesize\ttfamily \label{classdate_a6e73b5dd43d866eeb88a3de29561679c} 
+void date::\+set\+Month (\begin{DoxyParamCaption}\item[{int}]{m}{}\end{DoxyParamCaption})}
+
+
+
+sets the month 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & month \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdate_a6e73b5dd43d866eeb88a3de29561679c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classdate_a390791a3b9cc0c194c6c1111c76fe0cf}\index{date@{date}!setYear@{setYear}}
+\index{setYear@{setYear}!date@{date}}
+\doxysubsubsection{\texorpdfstring{setYear()}{setYear()}}
+{\footnotesize\ttfamily \label{classdate_a390791a3b9cc0c194c6c1111c76fe0cf} 
+void date::\+set\+Year (\begin{DoxyParamCaption}\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+sets the year 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & year \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function:\+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classdate_a390791a3b9cc0c194c6c1111c76fe0cf_icgraph}
+\end{center}
+\end{figure}
+
+
+\label{doc-variable-members}
+\Hypertarget{classdate_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdate_a2649784269c2be62800d1e4509ed2b56}\index{date@{date}!day@{day}}
+\index{day@{day}!date@{date}}
+\doxysubsubsection{\texorpdfstring{day}{day}}
+{\footnotesize\ttfamily \label{classdate_a2649784269c2be62800d1e4509ed2b56} 
+int date::\+day\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classdate_a4007efea3f7afe04e9a195dc13f71f38}\index{date@{date}!month@{month}}
+\index{month@{month}!date@{date}}
+\doxysubsubsection{\texorpdfstring{month}{month}}
+{\footnotesize\ttfamily \label{classdate_a4007efea3f7afe04e9a195dc13f71f38} 
+int date::\+month\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+day of the month 
+
+\Hypertarget{classdate_a12304556327d9ea913a0534a8554107a}\index{date@{date}!year@{year}}
+\index{year@{year}!date@{date}}
+\doxysubsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily \label{classdate_a12304556327d9ea913a0534a8554107a} 
+int date::\+year\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+month of the year 
+
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{date_8h}{date.\+h}}\item 
+\doxymbox{\hyperlink{date_8cpp}{date.\+cpp}}\end{DoxyCompactItemize}

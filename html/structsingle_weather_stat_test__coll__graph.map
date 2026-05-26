@@ -1,0 +1,7 @@
+<map id="singleWeatherStatTest" name="singleWeatherStatTest">
+<area shape="rect" id="Node000001" title=" " alt="" coords="44,467,185,579"/>
+<area shape="rect" id="Node000002" href="$classdate.html" title="stores year, month and day as integers" alt="" coords="5,5,106,395"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,392,104,450,99,450,90,397"/>
+<area shape="rect" id="Node000003" href="$class_time.html" title="stores hour and minute as integers" alt="" coords="130,16,219,384"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,382,130,451,125,449,139,386"/>
+</map>

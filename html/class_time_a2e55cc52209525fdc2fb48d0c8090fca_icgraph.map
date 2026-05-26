@@ -1,0 +1,13 @@
+<map id="Time::setMinute" name="Time::setMinute">
+<area shape="rect" id="Node000001" title=" " alt="" coords="957,5,1072,32"/>
+<area shape="rect" id="Node000002" href="$classdata_processor.html#a29e3cb287d5df7a056d09948dd37d0d0" title="it reads data from Csv file and stores it in allRecords" alt="" coords="730,5,909,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="939,19,910,21,910,16,944,19"/>
+<area shape="rect" id="Node000003" href="$classdata_processor.html#a00bca3383966ded0075891489c995c22" title="it reads the first row of csv file, identifying WAST, S ,T and SR" alt="" coords="526,5,682,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="711,19,682,21,682,16,717,19"/>
+<area shape="rect" id="Node000004" href="$classdata_processor.html#ac1f4ec8c9095f7c834f7681bda91863f" title="it opens a individual Csv file and pass it to parsing()" alt="" coords="309,5,478,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="508,19,479,21,479,16,513,19"/>
+<area shape="rect" id="Node000005" href="$classdata_processor.html#ae0489edc8837cc869aaa6e180c5781d6" title="it opens a text file that contins a list of Csv file names" alt="" coords="103,5,261,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="291,19,262,21,262,16,296,19"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="85,20,55,21,55,16,90,18"/>
+</map>

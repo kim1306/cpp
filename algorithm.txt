@@ -1,0 +1,475 @@
+FUNCTION Main()
+    DECLARE myDP AS dataProcessor
+    DECLARE hardCodedFile AS STRING <- "data/data_source.txt"
+
+    myDP.openfile(hardCodedFile)
+    DECLARE allRecords AS Vector<singleWeatherStat> = myDP.getAllRecords()
+
+    DECLARE MyView AS view
+    DECLARE calculator AS compute(allRecords)
+
+    DECLARE loopFlag AS BOOLEAN <- TRUE
+    WHILE (loopFlag) DO
+        DECLARE choice AS INTEGER
+	choice <- MyView.openMenu()
+
+        SWITCH (choice) DO
+            CASE 1:
+                DECLARE m AS INTEGER <- MyView.AskMonth()
+                DECLARE y AS INTEGER <- MyView.AskYear()
+                DECLARE avg AS FLOAT <- calculator.getAvgWind(m, y)
+                DECLARE stdev AS FLOAT <- calculator.getStdevWind(m, y)
+                MyView.displayWindstats(avg, stdev)
+
+            CASE 2:
+                DECLARE m AS INTEGER <- MyView.AskMonth()
+                DECLARE y AS INTEGER <- MyView.AskYear()
+                DECLARE avg AS FLOAT <- calculator.getAvgTemp(m, y)
+                DECLARE stdev AS FLOAT <- calculator.getStdevTemp(m, y)
+                MyView.displayTemperatureStats(avg, stdev)
+
+            CASE 3:
+                DECLARE m AS INTEGER <- MyView.AskMonth()
+                DECLARE y AS INTEGER <- MyView.AskYear()
+                DECLARE sum AS FLOAT <- calculator.getTotalSolarRad(m, y)
+                MyView.displayTotalSR(sum)
+
+            CASE 4:
+                DECLARE y AS INTEGER <- MyView.AskYear()
+                MyView.MonthlyWeatherStatsHeader(y)
+                FOR m FROM 0 TO 12 DO
+                    DECLARE Wavg AS FLOAT <- calculator.getAvgWind(m, y)
+                    DECLARE Wstdev AS FLOAT <- calculator.getStdevWind(m, y)
+                    DECLARE Tavg AS FLOAT <- calculator.getAvgTemp(m, y)
+                    DECLARE Tstdev AS FLOAT <- calculator.getStdevTemp(m, y)
+                    DECLARE SRsum AS FLOAT <- calculator.getTotalSolarRad(m, y)
+
+                    MyView.displayMonthlyRow(m, Wavg, Wstdev, Tavg, Tstdev, SRsum)
+
+                END FOR
+
+            CASE 5:
+                loopFlag <- FALSE
+                MyView.terminate()
+
+            DEFAULT:
+                MyView.ChoiceError()
+        END SWITCH
+    END WHILE
+
+    RETURN 0
+END FUNCTION
+
+
+
+
+
+CLASS view 
+
+    FUNCTION openMenu() RETURNS INTEGER
+        DECLARE choice AS INTEGER
+
+        WRITE"option1: select year and month to get average speed and standard deviation for the wind"
+        WRITE"option2: select year and month to get average and standard deviation of temperature"
+        WRITE "option3: solar radiation in KWh/m*m"
+        WRITE "option4: select a year to print all data above in each month"
+        WRITE "option5: terminate the program"
+
+        WRITE "please select option:"
+        READ KB, choice
+
+        RETURN choice
+    END FUNCTION
+
+
+
+
+    FUNCTION displayWindstats(avg AS FLOAT, stdev AS FLOAT)
+        WRITE"average speed and standard deviation for the wind: ", avg, " and ", stdev
+    END FUNCTION
+
+
+
+
+    FUNCTION displayTemperatureStats(avg AS FLOAT, stdev AS FLOAT)
+        WRITE"average and standard deviation for the temperature: ", avg, " and ", stdev
+    END FUNCTION
+
+
+
+    FUNCTION displayTotalSR(sum AS FLOAT)
+        WRITE "the total of solar radiation in kmh/(m*m) is: ", sum
+    END FUNCTION
+
+
+
+    FUNCTION terminate()
+        WRITE "ending the program.. press any key to exit"
+    END FUNCTION
+
+
+
+    FUNCTION AskMonth() RETURNS INTEGER
+        DECLARE M AS INTEGER
+        WRITE "enter a month: "
+        READ KB, M
+        RETURN M
+    END FUNCTION
+
+
+
+
+    FUNCTION AskYear() RETURNS INTEGER
+        DECLARE Y AS INTEGER
+        WRITE "enter a year: "
+        READ KB, Y
+        RETURN Y
+    END FUNCTION
+
+
+
+    FUNCTION ChoiceError()
+        WRITE "you need to select between 1 and 5!"
+    END FUNCTION
+
+    FUNCTION MonthlyWeatherStatsHeader(year AS INTEGER)
+        WRITE "annual summary for ", year
+        WRITE "month: | average wind speed(standard deviation), average temperature(standard deviation), total solar radiation"
+    END FUNCTION
+
+
+
+
+    FUNCTION displayMonthlyRow(month AS INTEGER, Wavg AS FLOAT, Wstd AS FLOAT, Tavg AS FLOAT, Tstd AS FLOAT, SR AS FLOAT)
+        WRITE month, ":"
+        WRITE Wavg, Wstd, Tavg, Tstd, SR
+    END FUNCTION
+
+END CLASS VIEW
+
+
+
+
+
+CLASS dataProcessor
+
+    FUNCTION openfile(filename AS STRING)
+	OPEN READ openTxt= “filename”
+        IF NOT (openTxt) THEN
+            WRITE "failed to open file"
+            RETURN
+        END IF
+
+        DECLARE csv AS STRING
+
+        WHILE (getline(openTxt, csv)) DO
+            openCSV("data/" + csv)
+        END WHILE
+        openTxt.close()
+    END FUNCTION
+
+
+
+
+    FUNCTION openCSV(csv AS STRING)
+OPEN READ infile =”csv”        
+        IF NOT (infile) THEN
+            WRITE "failed to open file", csv
+            RETURN
+        END IF
+
+        parsing(infile)
+        infile.close()
+    END FUNCTION
+
+
+
+    FUNCTION parsing(infile AS ifstream)
+        DECLARE headers AS STRING
+        DECLARE column AS STRING
+        DECLARE index AS INTEGER <- 0
+
+        getline(infile, headers)
+        DECLARE ss AS stringstream(headers)
+
+        WHILE (getline(ss, column, ',')) DO
+            DECLARE cleanedStr AS STRING 
+	cleanedStr <- cleanString(column)
+
+            IF cleanedStr = "WAST" THEN
+                WASTindex <- index
+            ELSE IF cleanedStr = "S" THEN
+                Sindex <- index
+            ELSE IF cleanedStr = "T" THEN
+                Tindex <- index
+            ELSE IF cleanedStr = "SR" THEN
+                SRindex <- index
+            END IF
+            index <- index + 1
+        END WHILE
+        collectData(infile)
+    END FUNCTION
+
+
+
+    FUNCTION cleanString(s AS STRING) RETURNS STRING
+        DECLARE result AS STRING
+        FOR EACH ( c IN s ) DO
+            IF (c >= 'A' AND c <= 'z') THEN
+                result <- result + c
+            END IF
+        END FOR
+
+        RETURN result
+    END FUNCTION
+
+
+
+    FUNCTION collectData(infile AS ifstream)
+        DECLARE line AS STRING
+        DECLARE value AS STRING
+
+        WHILE (getline(infile, line)) DO
+            DECLARE ss AS stringstream(line)
+            DECLARE index AS INTEGER <- 0
+            DECLARE temporaryRecord AS singleWeatherStat
+
+            WHILE getline(ss, value, ',') DO
+                IF (index = WASTindex) THEN
+                    DECLARE ssWast AS stringstream(value)
+                    DECLARE datePart AS STRING
+                    DECLARE timePart AS STRING
+
+                    ssWast >> datePart >> timePart
+                    DECLARE d, m, y, hr, min AS INTEGER
+                    DECLARE separate AS CHAR
+
+                    stringstream(datePart) >> d >> separate >> m >> separate >> y
+                    stringstream(timePart) >> hr >> separate >> min
+
+                    temporaryRecord.d.setDay(d)
+                    temporaryRecord.d.setMonth(m)
+                    temporaryRecord.d.setYear(y)
+                    temporaryRecord.t.setHour(hr)
+                    temporaryRecord.t.setMinute(min)
+                ELSE IF (index = Sindex) THEN
+                    stringstream(value) >> temporaryRecord.windSpeed
+                ELSE IF (index = Tindex) THEN
+                    stringstream(value) >> temporaryRecord.temperature
+                ELSE (IF index = SRindex) THEN
+                    stringstream(value) >> temporaryRecord.solarRadiation
+                END IF
+                index <- index + 1
+            END WHILE
+
+            allRecords.addRecord(temporaryRecord)
+        END WHILE
+    END FUNCTION
+
+
+
+    FUNCTION getAllRecords() RETURNS Vector<singleWeatherStat>
+        RETURN allRecords
+    END FUNCTION
+
+END CLASS
+
+
+
+
+
+
+CLASS compute
+
+    FUNCTION getAvgWind(month AS INTEGER, year AS INTEGER) RETURNS FLOAT
+        DECLARE sum AS FLOAT <- 0
+        DECLARE count AS INTEGER <- 0
+        FOR (i FROM 0 TO data.getSize() - 1) DO
+            IF (data[i].d.getMonth() = month AND data[i].d.getYear() = year) THEN
+                sum <- sum + data[i].windSpeed
+                count <- count + 1
+            END IF
+        END FOR
+        DECLARE avg AS FLOAT <- (3.6 * sum / count)
+        RETURN avg
+    END FUNCTION
+
+
+
+    FUNCTION getStdevWind(month AS INTEGER, year AS INTEGER) RETURNS FLOAT
+        DECLARE avg AS FLOAT <- getAvgWind(month, year)
+        DECLARE varianceSum AS FLOAT <- 0
+        DECLARE count AS INTEGER <- 0
+        FOR (i FROM 0 TO data.getSize() - 1) DO
+            IF (data[i].d.getMonth() = month AND data[i].d.getYear() = year ) THEN
+                varianceSum <- varianceSum + (data[i].windSpeed - avg)
+                count <- count + 1
+            END IF
+        END FOR
+        RETURN sqrt(varianceSum / count)
+    END FUNCTION
+
+
+
+    FUNCTION getAvgTemp(month AS INTEGER, year AS INTEGER) RETURNS FLOAT
+        DECLARE sum AS FLOAT <- 0
+        DECLARE count AS INTEGER <- 0
+        FOR (i FROM 0 TO data.getSize() - 1 ) DO
+            IF (data[i].d.getMonth() = month AND data[i].d.getYear() = year ) THEN
+                sum <- sum + data[i].temperature
+                count <- count + 1
+            END IF
+        END FOR
+        RETURN (sum / count)
+    END FUNCTION
+
+
+
+    FUNCTION getStdevTemp(month AS INTEGER, year AS INTEGER) RETURNS FLOAT
+        DECLARE avg AS FLOAT <- getAvgTemp(month, year)
+        DECLARE varianceSum AS FLOAT <- 0
+        DECLARE count AS INTEGER <- 0
+        FOR (i FROM 0 TO data.getSize() - 1 ) DO
+            IF (data[i].d.getMonth() = month AND data[i].d.getYear() = year) THEN
+                varianceSum <- varianceSum + (data[i].temperature - avg) 
+                count <- count + 1
+            END IF
+        END FOR
+        RETURN sqrt(varianceSum / count)
+    END FUNCTION
+
+
+
+    FUNCTION getTotalSolarRad(month AS INTEGER, year AS INTEGER) RETURNS FLOAT
+        DECLARE totalRadiation AS FLOAT <- 0
+        FOR (i FROM 0 TO data.getSize() - 1) DO
+            IF (data[i].d.getMonth() = month AND data[i].d.getYear() = year) THEN
+                totalRadiation <- totalRadiation + data[i].solarRadiation
+            END IF
+        END FOR
+        RETURN (totalRadiation / 6.0) / 1000.0
+    END FUNCTION
+
+END CLASS
+
+
+
+
+
+
+
+
+
+
+
+TEMPLATE CLASS T
+CLASS Vector
+
+    FUNCTION Vector()
+        DECLARE size AS INTEGER <- 0
+        DECLARE capacity AS INTEGER <- 20
+        DECLARE data AS NEW ARRAY OF T WITH capacity
+    END FUNCTION
+
+
+
+    FUNCTION ~Vector()
+        DELETE data
+	data <- NULLPTR
+        size <- 0
+        capacity <- 0
+    END FUNCTION
+
+
+
+    FUNCTION CopyConstructor(otherVector AS Vector<T>)
+
+        DECLARE data AS NEW ARRAY OF T WITH otherVector.capacity
+        size <- otherVector.size
+        capacity <- otherVector.capacity
+
+        FOR (i FROM 0 TO size - 1 ) DO
+            data[i] <- otherVector.data[i]
+        END FOR
+    END FUNCTION
+
+
+
+	FUNCTION operator=(other AS Vector<T>) RETURNS Vector<T>
+
+        DECLARE newData AS NEW ARRAY OF T WITH other.capacity
+
+	FOR ( i FROM 0 TO size - 1) DO
+            newData[i] <- other.data[i]
+        END FOR
+	
+	DELETE data
+	data <- newData
+        size <- other.size
+        capacity <- other.capacity
+	newData <- NULLPTR
+        RETURN this
+    END FUNCTION
+
+
+
+    FUNCTION getSize() RETURNS INTEGER
+        RETURN size
+    END FUNCTION
+
+
+
+    FUNCTION getCapacity() RETURNS INTEGER
+        RETURN capacity
+    END FUNCTION
+
+
+
+    FUNCTION addRecord(element AS T)
+        IF (size = capacity) THEN
+            CALL resizeCapacity()
+        END IF
+
+        data[size] <- element
+        size <- size + 1
+    END FUNCTION
+
+
+
+    FUNCTION resizeCapacity()
+        DECLARE newCapacity AS INTEGER <- capacity * 2
+        DECLARE newData AS NEW ARRAY OF T WITH newCapacity
+
+        FOR( i FROM 0 TO size - 1 ) DO
+            newData[i] <- data[i]
+        END FOR
+
+        DELETE data
+        data <- newData
+        capacity <- newCapacity
+    END FUNCTION
+
+
+    
+
+	FUNCTION operator[index AS INTEGER] RETURNS T
+        RETURN data[index]
+    END FUNCTION
+
+
+    
+END CLASS
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,427,55,453"/>
+<area shape="rect" id="Node000002" href="$classview.html#acc6b4b4f3e286930a279883a4d97cc25" title="it asks month" alt="" coords="143,5,258,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="29,426,34,348,46,232,67,118,82,73,101,42,129,25,127,30,105,46,87,75,72,120,51,233,39,348,35,426"/>
+<area shape="rect" id="Node000003" href="$classview.html#a3c1265a3abbb0217b89ffc405b248b18" title="it asks year" alt="" coords="148,56,253,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="30,426,36,357,49,257,70,158,84,120,101,93,115,82,134,74,131,79,118,86,105,96,89,122,75,160,54,258,41,357,35,427"/>
+<area shape="rect" id="Node000004" href="$classview.html#a95d672bb222e382aded83c616efea063" title="it prints error message when user input is outside of scope" alt="" coords="138,107,263,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="30,426,38,366,52,281,73,198,86,166,101,143,124,129,122,134,105,147,91,168,78,200,57,282,43,366,35,427"/>
+<area shape="rect" id="Node000005" href="$classview.html#a4758232bbf9c450486801bcc15d880b9" title="displays a month and a single row of weather data for that specific month" alt="" coords="115,157,286,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="28,426,30,382,39,319,48,286,61,252,78,221,101,194,108,190,105,195,105,198,83,224,66,255,53,287,44,320,35,382,34,426"/>
+<area shape="rect" id="Node000006" href="$classview.html#a31387667c257c9dcf13e9f4f0ce4860f" title="it prints average temperature and standard deviation" alt="" coords="116,208,285,251"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="30,426,36,393,49,349,70,302,84,280,101,261,107,258,105,262,105,265,88,283,74,304,54,350,42,394,36,427"/>
+<area shape="rect" id="Node000007" href="$classview.html#a52e8f871b7b9cc817a6a72cbefe5b041" title="it prints total of solar radiation" alt="" coords="128,275,272,301"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="33,425,55,370,75,338,101,311,115,304,112,308,104,315,79,341,60,372,38,427"/>
+<area shape="rect" id="Node000008" href="$classview.html#ad04c20112bcec34c2e66ed45660e0a6b" title="it prints average wind speed and standard deviation" alt="" coords="122,325,278,352"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="38,425,64,393,101,362,115,356,112,360,104,366,68,397,43,428"/>
+<area shape="rect" id="Node000009" href="$classdata_processor.html#a23e149abaf2f0c8120e0bfaaa1d7478e" title="getter of allRecords, it provides read&#45;only access to the records" alt="" coords="103,376,298,403"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="53,431,140,405,137,410,57,435"/>
+<area shape="rect" id="Node000010" href="$classcompute.html#a41235721a1e61bd3adda6da33060bd56" title="calculates average temperature for a specific month and year" alt="" coords="354,452,507,479"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="54,439,340,457,337,462,56,444"/>
+<area shape="rect" id="Node000011" href="$classcompute.html#a84f6a533aa50618aa4a6f59b58423cf5" title="calculates average wind speed for a specific month and year" alt="" coords="356,553,506,580"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="39,451,67,484,84,500,104,514,162,538,224,553,285,562,342,567,338,569,284,567,223,558,160,543,101,518,81,505,63,488,41,456"/>
+<area shape="rect" id="Node000012" href="$classcompute.html#abe60ecfcf15ef1a68dc23077b941f8e5" title="calculates standard deviation of temperature for a specific month and year" alt="" coords="119,477,282,504"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="54,445,140,471,136,474,56,450"/>
+<area shape="rect" id="Node000013" href="$classcompute.html#ac846689d43b055e49f09c8933a6fead0" title="calculates standard deviation of wind speed for a specific month and year" alt="" coords="120,579,281,605"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="36,451,61,504,80,533,104,558,124,571,120,573,101,562,76,536,57,507,36,456"/>
+<area shape="rect" id="Node000014" href="$classcompute.html#a548233aed6e033f8bd24e5ebc1546e90" title="calculates total of solar radiation for a specific month and year" alt="" coords="111,629,290,656"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="33,451,41,487,53,531,73,576,87,597,104,615,110,620,105,622,101,619,83,601,69,579,48,532,36,488,33,457"/>
+<area shape="rect" id="Node000015" href="$classview.html#a5f8306c7241a4fb2b058b787dbacd216" title="it prints year and formatted table headers (for option 4)" alt="" coords="110,680,291,723"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="32,451,37,495,48,552,69,613,85,641,105,666,107,669,102,671,101,670,80,644,64,615,42,553,32,496,32,457"/>
+<area shape="rect" id="Node000016" href="$classdata_processor.html#ae0489edc8837cc869aaa6e180c5781d6" title="it opens a text file that contins a list of Csv file names" alt="" coords="121,747,280,773"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="33,451,43,514,57,598,78,680,91,712,105,733,110,739,105,740,101,736,86,714,73,682,52,599,38,514,33,456"/>
+<area shape="rect" id="Node000026" href="$classview.html#a627c2a50f93236fe731e54c326c46c0e" title="it prints menu options (1~5) and take the user input" alt="" coords="142,797,258,824"/>
+<area shape="poly" id="edge27_Node000001_Node000026" title=" " alt="" coords="32,451,41,523,54,622,75,720,89,758,105,783,130,801,125,802,101,787,84,760,70,722,49,623,36,523,32,456"/>
+<area shape="rect" id="Node000027" href="$classview.html#a173a2fde35624b29a75025d272bcac82" title="it prints a termination message" alt="" coords="145,848,256,875"/>
+<area shape="poly" id="edge28_Node000001_Node000027" title=" " alt="" coords="32,451,39,532,51,647,72,760,87,805,105,834,117,844,133,854,128,854,114,849,101,838,82,807,67,762,46,648,34,532,32,457"/>
+<area shape="poly" id="edge12_Node000012_Node000010" title=" " alt="" coords="281,479,341,474,337,477,284,484"/>
+<area shape="poly" id="edge14_Node000013_Node000011" title=" " alt="" coords="280,581,342,575,338,578,282,586"/>
+<area shape="rect" id="Node000017" href="$classdata_processor.html#ac1f4ec8c9095f7c834f7681bda91863f" title="it opens a individual Csv file and pass it to parsing()" alt="" coords="346,747,515,773"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="280,757,333,759,328,761,280,763"/>
+<area shape="rect" id="Node000018" href="$classdata_processor.html#a00bca3383966ded0075891489c995c22" title="it reads the first row of csv file, identifying WAST, S ,T and SR" alt="" coords="563,747,719,773"/>
+<area shape="poly" id="edge19_Node000017_Node000018" title=" " alt="" coords="516,757,550,760,545,760,516,763"/>
+<area shape="rect" id="Node000019" href="$classdata_processor.html#aacd6ab82b190a80b82b626424d454b7b" title="it cleans string by removing non&#45;alphabetic characters (it sometimes reads some hidden spaces or char..." alt="" coords="767,721,946,748"/>
+<area shape="poly" id="edge20_Node000018_Node000019" title=" " alt="" coords="719,748,754,747,749,747,720,753"/>
+<area shape="rect" id="Node000020" href="$classdata_processor.html#a29e3cb287d5df7a056d09948dd37d0d0" title="it reads data from Csv file and stores it in allRecords" alt="" coords="767,772,946,799"/>
+<area shape="poly" id="edge21_Node000018_Node000020" title=" " alt="" coords="719,766,754,773,748,773,719,772"/>
+<area shape="rect" id="Node000021" href="$classdate.html#a9806f5cb8229eed570f31043d3cc73f8" title="sets the day" alt="" coords="1004,671,1100,697"/>
+<area shape="poly" id="edge22_Node000020_Node000021" title=" " alt="" coords="921,769,945,758,959,746,968,734,978,721,992,707,998,706,1003,704,996,711,982,724,973,737,963,750,947,762,922,774"/>
+<area shape="rect" id="Node000022" href="$class_time.html#a79e74e17893cf244e1318ceb9b1c7f32" title="sets the hour" alt="" coords="1000,721,1104,748"/>
+<area shape="poly" id="edge23_Node000020_Node000022" title=" " alt="" coords="910,769,982,752,987,751,911,774"/>
+<area shape="rect" id="Node000023" href="$class_time.html#a35779c16a9db3499a27eccd58793f3b5" title="sets the minute" alt="" coords="994,772,1109,799"/>
+<area shape="poly" id="edge24_Node000020_Node000023" title=" " alt="" coords="946,783,981,785,976,786,946,788"/>
+<area shape="rect" id="Node000024" href="$classdate.html#a6e73b5dd43d866eeb88a3de29561679c" title="sets the month" alt="" coords="998,823,1106,849"/>
+<area shape="poly" id="edge25_Node000020_Node000024" title=" " alt="" coords="911,797,985,818,980,818,911,802"/>
+<area shape="rect" id="Node000025" href="$classdate.html#a390791a3b9cc0c194c6c1111c76fe0cf" title="sets the year" alt="" coords="1002,873,1101,900"/>
+<area shape="poly" id="edge26_Node000020_Node000025" title=" " alt="" coords="882,797,995,859,1007,867,1002,866,993,864,880,802"/>
+</map>
